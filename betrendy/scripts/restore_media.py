@@ -32,10 +32,17 @@ def restore(item):
 
 def main():
     rows=json.loads((ROOT/'data/media-manifest.json').read_text())
+    failures=[]
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-        results=pool.map(restore,rows)
-        for i,_ in enumerate(results,1):
+        jobs={pool.submit(restore,row):row for row in rows}
+        for i,job in enumerate(concurrent.futures.as_completed(jobs),1):
+            try: job.result()
+            except Exception as exc:
+                failures.append({'path':jobs[job]['path'],'url':jobs[job]['url'],'error':str(exc)})
             if i%50==0: print(f'Verified {i}/{len(rows)} images',flush=True)
+    if failures:
+        print('FILES_REQUIRING_ORIGINAL_LOCAL_COPY='+json.dumps(failures,ensure_ascii=False),flush=True)
+        raise SystemExit(1)
     print(f'Complete: {len(rows)} original images verified')
 
 if __name__=='__main__':main()
