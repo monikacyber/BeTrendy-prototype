@@ -13,7 +13,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def restore(item):
     if 'path' not in item: raise RuntimeError('Manifest contains failed image: '+item['url'])
     p=urlsplit(item['url'])
-    if p.scheme!='https' or p.hostname!='betrendy.space' or not p.path.startswith('/content/'):
+    if p.scheme!='https' or p.hostname not in ('betrendy.space','uniksshop.com') or not p.path.startswith('/content/'):
         raise RuntimeError('Unexpected source URL')
     dest=(ROOT/item['path']).resolve()
     if not dest.is_relative_to((ROOT/'assets').resolve()): raise RuntimeError('Invalid asset path')
