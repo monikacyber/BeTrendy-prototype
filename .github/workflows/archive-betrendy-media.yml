@@ -1,0 +1,35 @@
+name: Archive BeTrendy original media
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - betrendy/data/media-manifest.json
+      - betrendy/scripts/restore_media.py
+      - .github/workflows/archive-betrendy-media.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: betrendy-media-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download original images and verify every SHA-256
+        run: python3 betrendy/scripts/restore_media.py
+      - name: Commit verified media to the separate BeTrendy repository
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add betrendy/assets/
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive verified original BeTrendy images"
+            git push origin HEAD:main
+          fi

@@ -32,7 +32,7 @@ def restore(item):
 
 def main():
     rows=json.loads((ROOT/'data/media-manifest.json').read_text())
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         results=pool.map(restore,rows)
         for i,_ in enumerate(results,1):
             if i%50==0: print(f'Verified {i}/{len(rows)} images',flush=True)
