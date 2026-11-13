@@ -1,6 +1,7 @@
 # BeTrendy draft importer
 
-This plugin only operates on `betrendy.online`.
+This plugin only operates when both the runtime home URL and the stored home URL
+use `betrendy.online` or its exact Hostinger alias `snow-anteater-890728.hostingersite.com`.
 Activate WooCommerce and **BeTrendy Source URLs** first. Set `import-config.json`
 `github_commit` to the full immutable 40-character commit of the verified GitHub
 media archive and re-run the packaging script. Optional installed media data packs
@@ -31,6 +32,8 @@ Update that record's registered REST meta `betrendy_import_command`:
 - `run`: process one bounded batch immediately (also schedules the next cron batch).
 - `pause`: pause and clear scheduled events.
 - `resume`: clear the pause and attempt one batch from the saved checkpoint.
+- `verify`: after completion, compare real products, prices, images, categories and
+  page block counts with the snapshot. Updates only the private verification report.
 
 Only an administrator can issue these commands; they affect only the unique status
 record created by this plugin. A completed job cannot be restarted by these commands.

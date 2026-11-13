@@ -40,7 +40,7 @@ final class BeTrendy_Draft_Import {
         ) );
         register_post_meta( self::TYPE, 'betrendy_import_command', array(
             'type' => 'string', 'single' => true, 'default' => '',
-            'show_in_rest' => array( 'schema' => array( 'type' => 'string', 'enum' => array( '', 'run', 'resume', 'pause' ) ) ),
+            'show_in_rest' => array( 'schema' => array( 'type' => 'string', 'enum' => array( '', 'run', 'resume', 'pause', 'verify' ) ) ),
             'auth_callback' => static function () { return current_user_can( 'manage_options' ); },
             'sanitize_callback' => 'sanitize_key',
         ) );
@@ -62,8 +62,11 @@ final class BeTrendy_Draft_Import {
 
     private static function environment( $allow_empty_currency_change = false ) {
         $host = wp_parse_url( home_url(), PHP_URL_HOST );
-        if ( 'betrendy.online' !== $host ) {
-            throw new RuntimeException( 'This package is restricted to the separate BeTrendy site.' );
+        $canonical_host = wp_parse_url( get_option( 'home' ), PHP_URL_HOST );
+        $allowed_hosts = array( 'betrendy.online', 'snow-anteater-890728.hostingersite.com' );
+        if ( ! in_array( $host, $allowed_hosts, true ) || ! in_array( $canonical_host, $allowed_hosts, true ) ) {
+            throw new RuntimeException( 'This package is restricted to the separate BeTrendy site. Actual host: '
+                . ( $host ?: '(missing)' ) . '; canonical host: ' . ( $canonical_host ?: '(missing)' ) . '.' );
         }
         if ( ! class_exists( 'WooCommerce' ) || ! class_exists( 'WC_Product_Simple' ) ) {
             throw new RuntimeException( 'Activate WooCommerce before starting the import.' );
@@ -188,9 +191,21 @@ final class BeTrendy_Draft_Import {
         if ( ! current_user_can( 'manage_options' ) || $post->ID !== (int) get_option( 'betrendy_import_status_post' ) ) { return; }
         $meta = $request->get_param( 'meta' );
         $command = is_array( $meta ) && isset( $meta['betrendy_import_command'] ) ? $meta['betrendy_import_command'] : '';
-        if ( ! in_array( $command, array( 'pause', 'resume', 'run' ), true ) ) { return; }
+        if ( ! in_array( $command, array( 'pause', 'resume', 'run', 'verify' ), true ) ) { return; }
         update_post_meta( $post->ID, 'betrendy_import_command', '' );
         $state = get_option( self::STATE, array() );
+        if ( 'verify' === $command ) {
+            // Verification changes only the private status report; it never imports or repairs content.
+            if ( empty( $state ) || 'complete' !== $state['status'] ) { return; }
+            try {
+                self::environment();
+                $state['verification'] = self::verify( self::data(), $state );
+            } catch ( Throwable $error ) {
+                $state['verification'] = array( 'passed' => false, 'checked_at' => gmdate( 'c' ),
+                    'counts' => array(), 'mismatches' => array( array( 'check' => 'verification', 'message' => $error->getMessage() ) ) );
+            }
+            self::save( $state ); return;
+        }
         if ( empty( $state ) || 'complete' === $state['status'] ) { return; }
         if ( 'pause' === $command ) {
             update_option( self::PAUSE, true, false );
@@ -342,6 +357,80 @@ final class BeTrendy_Draft_Import {
 
     private static function author() {
         return (int) get_post_field( 'post_author', (int) get_option( 'betrendy_import_status_post' ) );
+    }
+
+    private static function block_counts( $content ) {
+        $counts = array(); $pending = parse_blocks( $content );
+        while ( $pending ) {
+            $block = array_pop( $pending );
+            if ( ! empty( $block['blockName'] ) ) {
+                $name = $block['blockName']; $counts[ $name ] = ( $counts[ $name ] ?? 0 ) + 1;
+            }
+            foreach ( $block['innerBlocks'] ?? array() as $inner ) { $pending[] = $inner; }
+        }
+        ksort( $counts ); return $counts;
+    }
+
+    private static function normalized_price( $price ) {
+        return '' === (string) $price ? '' : wc_format_decimal( (string) $price, false, true );
+    }
+
+    private static function verify( $data, $state ) {
+        $report = array( 'passed' => false, 'checked_at' => gmdate( 'c' ), 'counts' => array(
+            'products_expected' => count( $data['products_uk'] ), 'products_found' => 0,
+            'pages_posts_expected' => count( $data['pages_uk'] ), 'pages_posts_found' => 0,
+            'media_expected' => count( $data['media_queue'] ), 'media_valid' => 0,
+        ), 'mismatches' => array() );
+        $map = get_option( 'betrendy_source_media', array() );
+        foreach ( $data['media_queue'] as $row ) {
+            $id = isset( $map[ $row['url'] ] ) ? (int) $map[ $row['url'] ] : 0;
+            $valid = $id && 'attachment' === get_post_type( $id )
+                && get_post_meta( $id, '_betrendy_source_url', true ) === $row['url'];
+            $file = $valid ? get_attached_file( $id, true ) : false;
+            if ( ! $valid || ! $file || ! is_file( $file ) ) {
+                $report['mismatches'][] = array( 'check' => 'media', 'asset' => basename( $data['media'][ $row['url'] ]['path'] ),
+                    'attachment_id' => $id, 'reason' => $valid ? 'attachment_file_missing' : 'attachment_mapping_missing_or_unrelated' );
+            } else { ++$report['counts']['media_valid']; }
+        }
+        foreach ( $data['products_uk'] as $row ) {
+            $id = wc_get_product_id_by_sku( $row['sku'] ); $product = $id ? wc_get_product( $id ) : false;
+            if ( ! $product ) { $report['mismatches'][] = array( 'check' => 'product', 'sku' => $row['sku'], 'field' => 'missing' ); continue; }
+            ++$report['counts']['products_found'];
+            $expected_images = array();
+            foreach ( $row['gallery'] as $url ) { $expected_images[] = isset( $map[ $url ] ) ? (int) $map[ $url ] : 0; }
+            $expected_featured = $expected_images ? array_shift( $expected_images ) : 0;
+            $expected_categories = array();
+            foreach ( $row['category_slugs'] as $slug ) { $expected_categories[] = (int) ( $state['term_ids'][ $slug ] ?? 0 ); }
+            $actual_categories = array_map( 'intval', $product->get_category_ids( 'edit' ) );
+            sort( $expected_categories ); sort( $actual_categories );
+            $fields = array(
+                'status' => array( 'draft', $product->get_status( 'edit' ) ),
+                'source_url_matches' => array( true, get_post_meta( $id, '_betrendy_source_url', true ) === $row['source_url'] ),
+                'regular_price' => array( self::normalized_price( $row['regular_price'] ), self::normalized_price( $product->get_regular_price( 'edit' ) ) ),
+                'sale_price' => array( self::normalized_price( $row['sale_price'] ), self::normalized_price( $product->get_sale_price( 'edit' ) ) ),
+                'featured_image_id' => array( $expected_featured, (int) $product->get_image_id( 'edit' ) ),
+                'gallery_count' => array( count( $expected_images ), count( $product->get_gallery_image_ids( 'edit' ) ) ),
+                'gallery_image_ids' => array( $expected_images, array_values( array_map( 'intval', $product->get_gallery_image_ids( 'edit' ) ) ) ),
+                'category_ids' => array( $expected_categories, $actual_categories ),
+            );
+            foreach ( $fields as $field => $values ) {
+                if ( $values[0] !== $values[1] ) { $report['mismatches'][] = array( 'check' => 'product', 'sku' => $row['sku'], 'field' => $field, 'expected' => $values[0], 'actual' => $values[1] ); }
+            }
+        }
+        foreach ( $data['pages_uk'] as $row ) {
+            $ids = get_posts( array( 'post_type' => array( 'page', 'post' ), 'post_status' => 'any', 'numberposts' => 2, 'fields' => 'ids',
+                'meta_key' => '_betrendy_source_url', 'meta_value' => $row['source_url'] ) );
+            if ( count( $ids ) !== 1 ) { $report['mismatches'][] = array( 'check' => 'page_post', 'slug' => $row['slug'], 'field' => 'matching_records', 'expected' => 1, 'actual' => count( $ids ) ); continue; }
+            ++$report['counts']['pages_posts_found']; $post = get_post( $ids[0] );
+            $fields = array( 'status' => array( 'draft', $post->post_status ), 'post_type' => array( $row['type'], $post->post_type ),
+                'native_block_counts' => array( self::block_counts( $row['content_blocks'] ), self::block_counts( $post->post_content ) ) );
+            foreach ( $fields as $field => $values ) {
+                if ( $values[0] !== $values[1] ) { $report['mismatches'][] = array( 'check' => 'page_post', 'slug' => $row['slug'], 'field' => $field, 'expected' => $values[0], 'actual' => $values[1] ); }
+            }
+        }
+        $report['counts']['mismatches'] = count( $report['mismatches'] );
+        $report['passed'] = empty( $report['mismatches'] );
+        return $report;
     }
 
     private static function import_media( $url, $label, $data ) {

@@ -33,6 +33,15 @@ add_action( 'enqueue_block_assets', function () {
     );
 } );
 
+// The header has explicit cart/account links. Prevent WooCommerce from adding
+// a second set after every separate navigation block in this block theme.
+add_filter( 'hooked_block_types', function ( $types, $position, $anchor ) {
+    if ( 'core/navigation' === $anchor ) {
+        $types = array_values( array_diff( $types, array( 'woocommerce/customer-account', 'woocommerce/mini-cart' ) ) );
+    }
+    return $types;
+}, 20, 3 );
+
 // Let an authorised editor review the imported draft catalogue inside page previews.
 add_filter( 'woocommerce_shortcode_products_query', function ( $query ) {
     if ( is_preview() && current_user_can( 'edit_products' ) ) {

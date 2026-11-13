@@ -1,0 +1,36 @@
+{
+  "site_id": 258651587,
+  "status": "complete",
+  "phase": "finalize",
+  "index": 0,
+  "created": {
+    "media": 246,
+    "products": 61,
+    "pages": 8
+  },
+  "totals": {
+    "categories": 17,
+    "media": 246,
+    "products": 61,
+    "pages": 8
+  },
+  "error": "",
+  "started_at": "2026-11-13T17:59:03+00:00",
+  "updated_at": "2026-11-13T18:21:35+00:00",
+  "completed_at": "2026-11-13T18:21:07+00:00",
+  "note": "Imported drafts only. RU/EN data are archived but /ru/ and /en/ storefronts do not exist yet; language links must not be published until configured. Checkout, publishing and the front page still require configuration.",
+  "verification": {
+    "passed": true,
+    "checked_at": "2026-11-13T18:21:35+00:00",
+    "counts": {
+      "products_expected": 61,
+      "products_found": 61,
+      "pages_posts_expected": 8,
+      "pages_posts_found": 8,
+      "media_expected": 246,
+      "media_valid": 246,
+      "mismatches": 0
+    },
+    "mismatches": []
+  }
+}
