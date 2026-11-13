@@ -1,0 +1,39 @@
+{
+  "products_by_language": {
+    "uk": 61,
+    "ru": 61,
+    "en": 61
+  },
+  "pages_and_posts": 24,
+  "categories": 51,
+  "warnings": [
+    {
+      "url": "https://betrendy.space/ru/dohliad-ta-zakhyst-2-v-1-z-losonamy-vid-be-trendy/",
+      "issue": "Source article has no translated body; kept empty, no text invented"
+    },
+    {
+      "url": "https://betrendy.space/ru/parfumovani-mus-piny-dlia-dushu-novynka-vid-be-trendy/",
+      "issue": "Source article has no translated body; kept empty, no text invented"
+    },
+    {
+      "url": "https://betrendy.space/en/dohliad-ta-zakhyst-2-v-1-z-losonamy-vid-be-trendy/",
+      "issue": "Source article has no translated body; kept empty, no text invented"
+    },
+    {
+      "url": "https://betrendy.space/en/parfumovani-mus-piny-dlia-dushu-novynka-vid-be-trendy/",
+      "issue": "Source article has no translated body; kept empty, no text invented"
+    }
+  ],
+  "missing_gallery_assets": [],
+  "currencies": {
+    "uk": [
+      "UAH"
+    ],
+    "ru": [
+      "UAH"
+    ],
+    "en": [
+      "USD"
+    ]
+  }
+}

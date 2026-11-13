@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "captured_public_pages": 276,
+  "required_inventory_pages": 271,
+  "required_inventory_pages_missing": 0,
+  "supplementary_full_listing_pages_unavailable": [
+    {
+      "url": "https://betrendy.space/en/be-trendy/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/en/collections/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/en/katalog/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/en/shimmer-line/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/en/vanna-spa/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/katalog/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/ru/be-trendy/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/ru/collections/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/ru/katalog/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/ru/shimmer-line/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/ru/vanna-spa/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/shimmer-line/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/vanna-spa/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    }
+  ],
+  "unique_skus_per_language": {
+    "uk": 61,
+    "ru": 61,
+    "en": 61
+  },
+  "verified_original_images": 389,
+  "csv_drafts": 61,
+  "editable_pages_posts": 20,
+  "empty_article_translations_in_source": 4,
+  "runtime_wordpress_tested": false,
+  "hostinger_deployed": false
+}

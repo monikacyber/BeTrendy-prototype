@@ -60,7 +60,7 @@ function bt_localize_html( $content ) {
         $id = bt_media( html_entity_decode( $match[0] ) );
         return $id ? wp_get_attachment_url( $id ) : $match[0];
     }, $content );
-    return str_replace( 'https://betrendy.space/', trailingslashit( home_url() ), $content );
+    return preg_replace( '~https://betrendy\.space/(?!content/)~', trailingslashit( home_url() ), $content );
 }
 
 $term_ids = array();
@@ -68,7 +68,17 @@ $routes = get_option( 'betrendy_source_routes', array() );
 foreach ( $categories as $category ) {
     if ( $category['language'] !== 'uk' ) { continue; }
     $existing = get_term_by( 'slug', $category['slug'], 'product_cat' );
-    if ( $existing ) { $term_ids[ $category['slug'] ] = $existing->term_id; continue; }
+    if ( $existing ) {
+        if ( get_term_meta( $existing->term_id, '_betrendy_source_path', true ) !== wp_parse_url( $category['source_url'], PHP_URL_PATH ) ) {
+            WP_CLI::error( 'Existing unrelated category conflicts with ' . $category['slug'] . '. No existing category was changed.' );
+        }
+        $term_ids[ $category['slug'] ] = $existing->term_id;
+        $path = wp_parse_url( $category['source_url'], PHP_URL_PATH );
+        update_term_meta( $existing->term_id, '_betrendy_source_path', $path );
+        $routes[ $path ] = 'index.php?product_cat=' . $category['slug'];
+        update_option( 'betrendy_source_routes', $routes, false );
+        continue;
+    }
     $insert = wp_insert_term( $category['name'], 'product_cat', array(
         'slug' => $category['slug'], 'description' => wp_kses_post( $category['description'] ),
     ) );
@@ -77,6 +87,7 @@ foreach ( $categories as $category ) {
     $path = wp_parse_url( $category['source_url'], PHP_URL_PATH );
     update_term_meta( $insert['term_id'], '_betrendy_source_path', $path );
     $routes[ $path ] = 'index.php?product_cat=' . $category['slug'];
+    update_option( 'betrendy_source_routes', $routes, false );
 }
 foreach ( $categories as $category ) {
     if ( $category['language'] === 'uk' && ! empty( $category['parent_slug'] ) && isset( $term_ids[ $category['parent_slug'] ] ) ) {
@@ -89,7 +100,20 @@ foreach ( $catalog as $row ) { $translations[ $row['sku'] ][ $row['language'] ] 
 $created_products = 0;
 foreach ( $catalog as $row ) {
     if ( $row['language'] !== 'uk' ) { continue; }
-    if ( wc_get_product_id_by_sku( $row['sku'] ) ) { WP_CLI::log( 'Skipped existing SKU ' . $row['sku'] ); continue; }
+    $existing_id = wc_get_product_id_by_sku( $row['sku'] );
+    if ( $existing_id ) {
+        if ( get_post_meta( $existing_id, '_betrendy_source_url', true ) !== $row['source_url'] ) {
+            WP_CLI::error( 'Existing unrelated product conflicts with SKU ' . $row['sku'] );
+        }
+        if ( get_post_meta( $existing_id, '_betrendy_source_url', true ) === $row['source_url'] ) {
+            $path = wp_parse_url( $row['source_url'], PHP_URL_PATH );
+            update_post_meta( $existing_id, '_betrendy_source_path', $path );
+            $routes[ $path ] = 'index.php?post_type=product&p=' . $existing_id;
+            update_option( 'betrendy_source_routes', $routes, false );
+        }
+        WP_CLI::log( 'Skipped existing SKU ' . $row['sku'] );
+        continue;
+    }
     if ( $row['currency'] !== 'UAH' ) { WP_CLI::error( 'Unexpected currency for ' . $row['sku'] ); }
     $product = new WC_Product_Simple();
     $product->set_name( $row['name'] );
@@ -115,6 +139,7 @@ foreach ( $catalog as $row ) {
     $product->update_meta_data( '_betrendy_seo_description', $row['seo_description'] );
     $product_id = $product->save();
     $routes[ wp_parse_url( $row['source_url'], PHP_URL_PATH ) ] = 'index.php?post_type=product&p=' . $product_id;
+    update_option( 'betrendy_source_routes', $routes, false );
     ++$created_products;
     WP_CLI::log( 'Imported draft SKU ' . $row['sku'] );
 }
@@ -122,13 +147,26 @@ $created_pages = 0;
 foreach ( $pages as $page ) {
     if ( $page['language'] !== 'uk' ) { continue; }
     $existing = get_posts( array( 'post_type' => array( 'page', 'post' ), 'post_status' => 'any', 'meta_key' => '_betrendy_source_url', 'meta_value' => $page['source_url'], 'numberposts' => 1 ) );
-    if ( $existing ) { continue; }
+    if ( $existing ) {
+        $path = wp_parse_url( $page['source_url'], PHP_URL_PATH );
+        update_post_meta( $existing[0]->ID, '_betrendy_source_path', $path );
+        if ( $path !== '/' ) { $routes[ $path ] = 'index.php?' . ( $page['type'] === 'page' ? 'page_id=' : 'p=' ) . $existing[0]->ID; }
+        update_option( 'betrendy_source_routes', $routes, false );
+        continue;
+    }
     $id = wp_insert_post( array( 'post_type' => $page['type'], 'post_status' => 'draft',
         'post_title' => $page['title'], 'post_name' => $page['slug'],
         'post_content' => bt_localize_html( $page['content_blocks'] ),
-        'meta_input' => array( '_betrendy_source_url' => $page['source_url'], '_betrendy_seo_title' => $page['seo_title'], '_betrendy_seo_description' => $page['seo_description'] ),
+        'meta_input' => array( '_betrendy_source_url' => $page['source_url'], '_betrendy_source_path' => wp_parse_url( $page['source_url'], PHP_URL_PATH ), '_betrendy_seo_title' => $page['seo_title'], '_betrendy_seo_description' => $page['seo_description'] ),
     ), true );
     if ( is_wp_error( $id ) ) { WP_CLI::error( $id->get_error_message() ); }
+    if ( ! empty( $page['featured_image'] ) ) {
+        $cover_id = bt_media( $page['featured_image'], $page['title'] );
+        if ( $cover_id ) { set_post_thumbnail( $id, $cover_id ); }
+    }
+    $path = wp_parse_url( $page['source_url'], PHP_URL_PATH );
+    if ( $path !== '/' ) { $routes[ $path ] = 'index.php?' . ( $page['type'] === 'page' ? 'page_id=' : 'p=' ) . $id; }
+    update_option( 'betrendy_source_routes', $routes, false );
     ++$created_pages;
 }
 update_option( 'betrendy_translation_archive', array( 'pages' => $pages, 'catalog' => $catalog ), false );
@@ -138,5 +176,6 @@ foreach ( bt_read_json( $root . '/data/redirects.json' ) as $redirect ) {
     $redirects[ wp_parse_url( $redirect['from'], PHP_URL_PATH ) ] = wp_parse_url( $redirect['to'], PHP_URL_PATH );
 }
 update_option( 'betrendy_source_redirects', $redirects, false );
+if ( function_exists( 'betrendy_register_source_routes' ) ) { betrendy_register_source_routes(); }
 flush_rewrite_rules();
 WP_CLI::success( 'Created ' . $created_products . ' draft products and ' . $created_pages . ' draft pages/posts. Review, configure multilingual/currency and checkout before publishing.' );

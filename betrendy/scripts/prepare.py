@@ -24,6 +24,8 @@ def urlkey(url):
 def native_blocks(markup):
     """Convert source prose to supported editable core blocks, not a Custom HTML wrapper."""
     soup = BeautifulSoup(markup, 'html.parser')
+    for nested in soup.select('p p'):
+        nested.unwrap()
     out = []
     for node in soup.find_all(['h1','h2','h3','h4','p','ul','ol','table','img']):
         if not node.name:
@@ -44,6 +46,12 @@ def native_blocks(markup):
             level = max(2, int(node.name[1]))
             if node.get_text(strip=True):
                 out.append(f'<!-- wp:heading {{"level":{level}}} -->\n<h{level} class="wp-block-heading">{node.decode_contents()}</h{level}>\n<!-- /wp:heading -->')
+        elif node.name == 'p' and node.find('a') and 'youtube.com/embed/' in node.find('a').get('href','') and node.get_text(strip=True)==node.find('a').get_text(strip=True):
+            source=node.find('a')['href']
+            video_id=urlsplit(source).path.rstrip('/').split('/')[-1]
+            url='https://www.youtube.com/watch?v='+video_id
+            attrs=json.dumps({'url':url,'type':'video','providerNameSlug':'youtube','responsive':True},ensure_ascii=False,separators=(',',':'))
+            out.append('<!-- wp:embed '+attrs+' -->\n<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">\n'+html.escape(url)+'\n</div></figure>\n<!-- /wp:embed -->')
         elif node.name == 'p' and node.get_text(strip=True):
             out.append('<!-- wp:paragraph -->\n<p>'+node.decode_contents()+'</p>\n<!-- /wp:paragraph -->')
         elif node.name in ('ul','ol'):
@@ -276,8 +284,14 @@ def main():
             if r['slug']=='contacts':
                 content=contacts_html(r)
             blocks = homepage_blocks(r, products_by_sku, warnings) if r['slug'] == 'home' else native_blocks(content)
+            source_empty = not bool(BeautifulSoup(content, 'html.parser').get_text(strip=True)) and not BeautifulSoup(content, 'html.parser').find('img')
+            if not blocks.strip():
+                warnings.append({'url':r['source_url'],'issue':'Source article has no translated body; kept empty, no text invented'})
+            cover=BeautifulSoup(r['main_html'],'html.parser').select_one('.article__cover img[src]')
             pages.append({'language':lang,'slug':r['slug'],'title':r['title'] or 'Be Trendy',
                 'type':'post' if r['slug'] in BLOG else 'page','content_blocks':blocks,
+                'source_content_empty':bool(source_empty),
+                'featured_image':cover['src'] if cover else '',
                 'source_url':r['source_url'],'seo_title':r['meta'].get('title',''),
                 'seo_description':r['meta'].get('description','')})
     for filename, value in [('catalog.json',catalog),('pages.json',pages),('categories.json',categories),('redirects.json',redirects)]:

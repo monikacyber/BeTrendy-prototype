@@ -1,0 +1,1390 @@
+{
+  "created_at": "2026-11-13T17:52:24.168688+00:00",
+  "public_export": true,
+  "source_files_modified": false,
+  "file_count_before_report": 317,
+  "financial_values_discovered_by_category": {
+    "iban": 1,
+    "personal_tax_id": 1,
+    "payment_recipient": 6,
+    "bank_code": 1,
+    "bank_name": 3
+  },
+  "redaction_occurrences_by_category": {
+    "payment_recipient": 208,
+    "iban": 202,
+    "personal_tax_id": 27,
+    "bank_name": 9,
+    "bank_code": 9
+  },
+  "changed_files": [
+    {
+      "path": "betrendy/data/pages.json",
+      "redactions": {
+        "payment_recipient": 8,
+        "iban": 6,
+        "personal_tax_id": 9,
+        "bank_name": 3,
+        "bank_code": 3
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/3d-nalipky-be-trendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-balzam-dlia-hub-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-biser-dlia-vanny-emerald-shine-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-biser-dlia-vanny-golden-glow-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-biser-dlia-vanny-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-biser-dlia-vanny-romantis-date-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-biser-dlia-vanny-shining-star-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-kashemirovyi-krem-dlia-tila-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-losion-shymer-d-tila-highlighter-golden-glow-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-losion-shymer-d-tila-highlighter-magic-party-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-losion-shymer-d-tila-highlighter-romantic-date-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-losion-shymer-d-tila-highlighter-shining-star-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-morska-sil-dlia-vanny-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-mus-pina-dlia-dushu-cotton-mangosteen-430-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-mus-pina-dlia-dushu-frangipani-acai-430-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-parfium.-skrab-d-t-bergamot-patchouli-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-parfum-very-rich-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-parfum.-skrab-d-t-marshmallow-vanilla-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-parfumovana-oliia-dlia-dushu-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-shymmer-skrab-emerald-shine-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-shymmer-skrab-magic-party-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-shymmer-skrab-romantic-date-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-shymmer-skrab-shining-star-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-shymmernyi-skrab-iz-tsinnymy-oliiamy-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-emerald-shine100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-golden-glow100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-romantic-date-100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-shining-star100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-sil-dlia-vanny-emerald-shine-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-sil-dlia-vanny-golden-glow-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-sil-dlia-vanny-romantis-date-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-sil-dlia-vanny-shining-star-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-sprei-shymmer-dlia-tila-golden-glow-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-sprei-shymmer-dlia-tila-magic-party-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-sprei-shymmer-dlia-tila-romantis-date-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-sprei-shymmer-dlia-tila-shining-star-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-zhyvylnyi-krem-t-bergamot-patchouli-230ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-zhyvylnyi-krem-t-jasmine-sandal-230ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-zhyvylnyi-krem-t-magnolia-rose-230ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/be-trendy-zhyvylnyi-krem-t-marshmallow-vanilla-230-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/oplata-i-dostavka.json",
+      "redactions": {
+        "payment_recipient": 2,
+        "iban": 2,
+        "personal_tax_id": 2
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/paket-podarunkovyi-betrendy-silver.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/paket-podarunkovyi-betrendy-white.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/parfum.-skrab-d-t-jasmine-sandal-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/parfum.-skrab-d-t-magnolia-rose-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/parfum.-skrab-d-t-marshmallow-vanilla-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkove-pakuvannia-tsukerka.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-emerald-shine-z-perlynamy-skrabom-i-bombochkoiu-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-golden-glow-z-perlynamy-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-jasmine-sandal-z-kremom-i-skrabom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-magic-party-zi-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-pink-z-bombochkoiu-ta-skrabom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-rich-vibes-z-oliieiu-kremom-i-balzamom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-rich-vibes-z-perlynamy-silliu-ta-oliieiu-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-rich-vibes-zi-skrabom-i-kremom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-rich-vibes-zi-skrabom-kremom-i-balzamom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-romantic-date-z-silliu-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-shining-star-z-bombochkoiu-silliu-ta-losionom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/podarunkovyi-nabir-shining-star-z-silliu-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/publichna-oferta.json",
+      "redactions": {
+        "personal_tax_id": 4,
+        "payment_recipient": 2,
+        "iban": 2,
+        "bank_name": 2,
+        "bank_code": 2
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/shymmer-skrab-emerald-shine-banka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/shymmer-skrab-golden-glowbanka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/shymmer-skrab-magic-partybanka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/en/shymmer-skrab-romantic-datebanka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/3d-nalipky-be-trendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-balzam-dlia-hub-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-biser-dlia-vanny-emerald-shine-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-biser-dlia-vanny-golden-glow-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-biser-dlia-vanny-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-biser-dlia-vanny-romantis-date-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-biser-dlia-vanny-shining-star-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-kashemirovyi-krem-dlia-tila-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-losion-shymer-d-tila-highlighter-golden-glow-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-losion-shymer-d-tila-highlighter-magic-party-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-losion-shymer-d-tila-highlighter-romantic-date-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-losion-shymer-d-tila-highlighter-shining-star-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-morska-sil-dlia-vanny-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-mus-pina-dlia-dushu-cotton-mangosteen-430-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-mus-pina-dlia-dushu-frangipani-acai-430-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-parfium.-skrab-d-t-bergamot-patchouli-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-parfum-very-rich-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-parfumovana-oliia-dlia-dushu-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-shymmer-skrab-emerald-shine-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-shymmer-skrab-magic-party-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-shymmer-skrab-romantic-date-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-shymmer-skrab-shining-star-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-shymmernyi-skrab-iz-tsinnymy-oliiamy-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-emerald-shine100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-golden-glow100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-romantic-date-100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-shining-star100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-sil-dlia-vanny-emerald-shine-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-sil-dlia-vanny-golden-glow-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-sil-dlia-vanny-romantis-date-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-sil-dlia-vanny-shining-star-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-sprei-shymmer-dlia-tila-golden-glow-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-sprei-shymmer-dlia-tila-magic-party-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-sprei-shymmer-dlia-tila-romantis-date-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-sprei-shymmer-dlia-tila-shining-star-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-zhyvylnyi-krem-t-bergamot-patchouli-230ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-zhyvylnyi-krem-t-jasmine-sandal-230ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-zhyvylnyi-krem-t-magnolia-rose-230ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/be-trendy-zhyvylnyi-krem-t-marshmallow-vanilla-230-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/oplata-i-dostavka.json",
+      "redactions": {
+        "payment_recipient": 2,
+        "iban": 2,
+        "personal_tax_id": 2
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/paket-podarunkovyi-betrendy-silver.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/paket-podarunkovyi-betrendy-white.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/parfum.-skrab-d-t-jasmine-sandal-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/parfum.-skrab-d-t-magnolia-rose-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/parfum.-skrab-d-t-marshmallow-vanilla-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkove-pakuvannia-tsukerka.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-emerald-shine-z-perlynamy-skrabom-i-bombochkoiu-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-golden-glow-z-perlynamy-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-jasmine-sandal-z-kremom-i-skrabom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-magic-party-zi-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-pink-z-bombochkoiu-ta-skrabom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-rich-vibes-z-oliieiu-kremom-i-balzamom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-rich-vibes-z-perlynamy-silliu-ta-oliieiu-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-rich-vibes-zi-skrabom-i-kremom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-rich-vibes-zi-skrabom-kremom-i-balzamom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-romantic-date-z-silliu-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-shining-star-z-bombochkoiu-silliu-ta-losionom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/podarunkovyi-nabir-shining-star-z-silliu-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/publichna-oferta.json",
+      "redactions": {
+        "payment_recipient": 4,
+        "personal_tax_id": 4,
+        "iban": 2,
+        "bank_name": 2,
+        "bank_code": 2
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/shymmer-skrab-emerald-shine-banka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/shymmer-skrab-golden-glowbanka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/shymmer-skrab-magic-partybanka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/ru/shymmer-skrab-romantic-datebanka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/3d-nalipky-be-trendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-balzam-dlia-hub-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-biser-dlia-vanny-emerald-shine-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-biser-dlia-vanny-golden-glow-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-biser-dlia-vanny-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-biser-dlia-vanny-romantis-date-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-biser-dlia-vanny-shining-star-150-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-kashemirovyi-krem-dlia-tila-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-losion-shymer-d-tila-highlighter-golden-glow-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-losion-shymer-d-tila-highlighter-magic-party-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-losion-shymer-d-tila-highlighter-romantic-date-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-losion-shymer-d-tila-highlighter-shining-star-spf-25100-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-morska-sil-dlia-vanny-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-mus-pina-dlia-dushu-cotton-mangosteen-430-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-mus-pina-dlia-dushu-frangipani-acai-430-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-parfium.-skrab-d-t-bergamot-patchouli-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-parfum-very-rich-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-parfumovana-oliia-dlia-dushu-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-shymmer-skrab-emerald-shine-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-shymmer-skrab-magic-party-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-shymmer-skrab-romantic-date-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-shymmer-skrab-shining-star-sukhyi-200-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-shymmernyi-skrab-iz-tsinnymy-oliiamy-rich-vibes-collection.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-emerald-shine100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-golden-glow100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-romantic-date-100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-shining-star100-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-sil-dlia-vanny-emerald-shine-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-sil-dlia-vanny-golden-glow-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-sil-dlia-vanny-romantis-date-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-sil-dlia-vanny-shining-star-250-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-sprei-shymmer-dlia-tila-golden-glow-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-sprei-shymmer-dlia-tila-magic-party-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-sprei-shymmer-dlia-tila-romantis-date-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-sprei-shymmer-dlia-tila-shining-star-155-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-zhyvylnyi-krem-t-bergamot-patchouli-230ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-zhyvylnyi-krem-t-jasmine-sandal-230ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-zhyvylnyi-krem-t-magnolia-rose-230ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/be-trendy-zhyvylnyi-krem-t-marshmallow-vanilla-230-ml.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/oplata-i-dostavka.json",
+      "redactions": {
+        "payment_recipient": 2,
+        "iban": 2,
+        "personal_tax_id": 2
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/paket-podarunkovyi-betrendy-silver.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/paket-podarunkovyi-betrendy-white.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/parfum.-skrab-d-t-jasmine-sandal-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/parfum.-skrab-d-t-magnolia-rose-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/parfum.-skrab-d-t-marshmallow-vanilla-300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkove-pakuvannia-tsukerka.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-emerald-shine-z-perlynamy-skrabom-i-bombochkoiu-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-golden-glow-z-perlynamy-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-jasmine-sandal-z-kremom-i-skrabom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-magic-party-zi-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-pink-z-bombochkoiu-ta-skrabom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-rich-vibes-z-oliieiu-kremom-i-balzamom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-rich-vibes-z-perlynamy-silliu-ta-oliieiu-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-rich-vibes-zi-skrabom-i-kremom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-rich-vibes-zi-skrabom-kremom-i-balzamom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-romantic-date-z-silliu-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-shining-star-z-bombochkoiu-silliu-ta-losionom-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/podarunkovyi-nabir-shining-star-z-silliu-skrabom-i-spreiem-betrendy.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/publichna-oferta.json",
+      "redactions": {
+        "payment_recipient": 4,
+        "personal_tax_id": 4,
+        "iban": 2,
+        "bank_name": 2,
+        "bank_code": 2
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/shymmer-skrab-emerald-shine-banka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/shymmer-skrab-golden-glowbanka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/shymmer-skrab-magic-partybanka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    },
+    {
+      "path": "betrendy/source/pages/uk/shymmer-skrab-romantic-datebanka300-h.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1
+      }
+    }
+  ],
+  "verification": {
+    "remaining_discovered_financial_values": 0,
+    "remaining_iban": 0,
+    "working_phone_and_email_values_preserved": true
+  },
+  "excluded_directories": [
+    ".cache",
+    ".git",
+    ".venv",
+    "__pycache__",
+    "assets",
+    "node_modules",
+    "packages"
+  ],
+  "excluded_generated_payload": "betrendy/wordpress/plugins/betrendy-import/data",
+  "notice": "Removed values are deliberately absent from this report. Full source/data remains local."
+}

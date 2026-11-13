@@ -1,0 +1,73 @@
+{
+  "source": "https://betrendy.space/",
+  "date": "2026-11-13",
+  "requested_pages": 289,
+  "captured_pages": 276,
+  "products_by_language": {
+    "uk": 61,
+    "ru": 61,
+    "en": 62
+  },
+  "pages_by_language": {
+    "uk": 32,
+    "ru": 30,
+    "en": 30
+  },
+  "media_files": 389,
+  "media_bytes": 341723941,
+  "page_errors": [
+    {
+      "url": "https://betrendy.space/en/be-trendy/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/en/collections/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/en/katalog/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/en/shimmer-line/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/en/vanna-spa/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/katalog/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/ru/be-trendy/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/ru/collections/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/ru/katalog/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/ru/shimmer-line/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/ru/vanna-spa/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/shimmer-line/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    },
+    {
+      "url": "https://betrendy.space/vanna-spa/filter/page=all/",
+      "error": "Source returned a challenge or empty response"
+    }
+  ],
+  "media_errors": []
+}

@@ -7,6 +7,7 @@ Downloaded pages are parsed as data; no remote scripts are executed.
 import concurrent.futures as futures
 import hashlib
 import json
+import posixpath
 import re
 import subprocess
 import time
@@ -25,24 +26,25 @@ def normalize(url):
     p = urlsplit(urljoin(BASE, url))
     if p.hostname not in ('betrendy.space', 'www.betrendy.space') or BLOCKED.search(p.path):
         return None
-    return 'https://betrendy.space' + p.path.rstrip('/') + '/'
+    path = posixpath.normpath(p.path or '/')
+    return 'https://betrendy.space' + path.rstrip('/') + '/'
 
 def download(url, cookie=''):
     cmd = ['curl', '-fsSL', '--retry', '2', '--max-time', '45', *HEADERS]
-    if cookie:
-        cmd += ['-H', 'Cookie: challenge_passed=' + cookie]
-    r = subprocess.run([*cmd, url], capture_output=True)
-    if r.returncode:
-        raise RuntimeError(r.stderr.decode(errors='replace')[-300:])
-    if len(r.stdout) < 2000 and b'const defaultHash' in r.stdout:
+    cookies = {'challenge_passed': cookie} if cookie else {}
+    for attempt in range(3):
+        headers = ['-H', 'Cookie: ' + '; '.join(k+'='+v for k,v in cookies.items())] if cookies else []
+        r = subprocess.run([*cmd, *headers, url], capture_output=True)
+        if r.returncode:
+            raise RuntimeError(r.stderr.decode(errors='replace')[-300:])
+        if len(r.stdout) >= 2000 or b'const defaultHash' not in r.stdout:
+            break
         match = re.search(rb'const defaultHash = "([a-f0-9]+)"', r.stdout)
-        if match and match.group(1).decode() != cookie:
-            # Mirror the public site's own non-interactive cookie check, no scripts executed.
-            fresh = match.group(1).decode()
-            r = subprocess.run(['curl','-fsSL','--max-time','45',*HEADERS,
-                                '-H','Cookie: challenge_passed='+fresh,url],capture_output=True)
-            if r.returncode:
-                raise RuntimeError(r.stderr.decode(errors='replace')[-300:])
+        name = re.search(rb'document\.cookie = "(challenge_passed(?:_cat)?)=', r.stdout)
+        if not match or not name or cookies.get(name.group(1).decode()) == match.group(1).decode():
+            break
+        # Mirror the public site's own non-interactive cookie check, no scripts executed.
+        cookies[name.group(1).decode()] = match.group(1).decode()
     return r.stdout
 
 def clean(node):
@@ -53,8 +55,11 @@ def clean(node):
             p = node.new_tag('p')
             a = node.new_tag('a', href=src)
             a.string = src
-            p.append(a)
-            frame.replace_with(p)
+            if frame.parent and frame.parent.name == 'p':
+                frame.replace_with(a)
+            else:
+                p.append(a)
+                frame.replace_with(p)
     for el in node.select('script, style, form, input, button, select, textarea, noscript, svg, iframe'):
         el.decompose()
     for comment in node.find_all(string=lambda s: isinstance(s, Comment)):
@@ -167,6 +172,15 @@ def save_media(url):
 def main():
     inventory = json.loads((ROOT / 'source/url-inventory.json').read_text())
     urls = sorted(set(filter(None, (normalize(x['url']) for x in inventory['links']))))
+    # Full category listings expose membership beyond the first page; filter combinations
+    # add no new product data. Capture the real catalogue landing pages too.
+    supplements = set()
+    for path in (ROOT/'source/pages').rglob('*.json'):
+        row = json.loads(path.read_text())
+        for url in row.get('links', []):
+            if '/filter/page=all/' in url or urlsplit(url).path.rstrip('/').endswith('/katalog'):
+                supplements.add(normalize(url))
+    urls = sorted(set(urls) | (supplements - {None}))
     challenge = download(BASE).decode(errors='replace')
     match = re.search(r'const defaultHash = "([a-f0-9]+)"', challenge)
     cookie = match.group(1) if match else ''

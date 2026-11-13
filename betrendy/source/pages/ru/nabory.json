@@ -1,0 +1,71 @@
+{
+  "source_url": "https://betrendy.space/ru/nabory/",
+  "canonical_url": "https://betrendy.space/ru/nabory/",
+  "captured_date": "2026-11-13",
+  "language": "ru",
+  "slug": "nabory",
+  "capture_schema": 2,
+  "type": "page",
+  "title": "",
+  "meta": {
+    "viewport": "width=device-width",
+    "robots": "all",
+    "description": "【Купить Уход за телом 】 — в Интернет магазине Betrendy.space ✅ В наличии товаров: 0 от ✈ Доставка ✅ Отзывы",
+    "og:locale": "ru_RU",
+    "og:site_name": "Betrendy.space - интернет-магазин уходовой косметики ",
+    "og:url": "https://betrendy.space/ru/nabory/",
+    "og:type": "product.group",
+    "position": "1",
+    "title": "Уход за телом  — купить в интернет магазине Betrendy.space"
+  },
+  "breadcrumbs": [
+    {
+      "title": "Главная",
+      "url": "https://betrendy.space/ru/"
+    },
+    {
+      "title": "Каталог",
+      "url": "https://betrendy.space/ru/katalog/"
+    },
+    {
+      "title": "Уход за телом",
+      "url": "https://betrendy.space/ru/dohliad-za-tilom/"
+    }
+  ],
+  "features": {},
+  "gallery": [],
+  "images": [],
+  "links": [
+    "https://betrendy.space/",
+    "https://betrendy.space/en/nabory/",
+    "https://betrendy.space/nabory/",
+    "https://betrendy.space/ru/",
+    "https://betrendy.space/ru/biser-dlia-vann/",
+    "https://betrendy.space/ru/blog/",
+    "https://betrendy.space/ru/bombochky-dlia-vann/",
+    "https://betrendy.space/ru/care-line/",
+    "https://betrendy.space/ru/collections/",
+    "https://betrendy.space/ru/contacts/",
+    "https://betrendy.space/ru/dohliad-za-tilom/",
+    "https://betrendy.space/ru/katalog/",
+    "https://betrendy.space/ru/krem-dlia-tila/",
+    "https://betrendy.space/ru/losion-z-shymerom/",
+    "https://betrendy.space/ru/mus-pina-dlia-dushu/",
+    "https://betrendy.space/ru/nabory/./",
+    "https://betrendy.space/ru/obmin-ta-povernennya/",
+    "https://betrendy.space/ru/oplata-i-dostavka/",
+    "https://betrendy.space/ru/podarunkovi-aksesuary/",
+    "https://betrendy.space/ru/podarunkovi-nabory/",
+    "https://betrendy.space/ru/pro-nas/",
+    "https://betrendy.space/ru/publichna-oferta/",
+    "https://betrendy.space/ru/rich-vibes/",
+    "https://betrendy.space/ru/shimmer-line/",
+    "https://betrendy.space/ru/skraby-dlia-tila/",
+    "https://betrendy.space/ru/soli-dlia-vann/",
+    "https://betrendy.space/ru/spf/",
+    "https://betrendy.space/ru/sprei-dlia-tila/",
+    "https://betrendy.space/ru/vanna-spa/"
+  ],
+  "content_html": "",
+  "main_html": "<main class=\"main\" id=\"main\">\n<div class=\"wrapper\">\n<div class=\"catalog\">\n<div class=\"catalog__top\">\n<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\" itemscope=\"\" itemtype=\"https://schema.org/BreadcrumbList\">\n<div class=\"breadcrumbs-i\" itemprop=\"itemListElement\" itemscope=\"\" itemtype=\"https://schema.org/ListItem\">\n<a href=\"https://betrendy.space/ru/\" itemprop=\"item\"><span itemprop=\"name\">Главная</span></a>\n<meta content=\"1\" itemprop=\"position\"/>\n\n</div>\n<div class=\"breadcrumbs-i\" itemprop=\"itemListElement\" itemscope=\"\" itemtype=\"https://schema.org/ListItem\">\n<a href=\"https://betrendy.space/ru/katalog/\" itemprop=\"item\"><span itemprop=\"name\">Каталог</span></a>\n<meta content=\"2\" itemprop=\"position\"/>\n\n</div>\n<div class=\"breadcrumbs-i\" itemprop=\"itemListElement\" itemscope=\"\" itemtype=\"https://schema.org/ListItem\">\n<a href=\"https://betrendy.space/ru/dohliad-za-tilom/\" itemprop=\"item\"><span itemprop=\"name\">Уход за телом</span></a>\n<meta content=\"3\" itemprop=\"position\"/>\n\n</div>\n<div class=\"breadcrumbs-i\" itemprop=\"itemListElement\" itemscope=\"\" itemtype=\"https://schema.org/ListItem\">\n<span content=\"https://betrendy.space/ru/nabory/\" itemprop=\"item\"><span itemprop=\"name\"></span></span>\n<meta content=\"4\" itemprop=\"position\"/>\n</div>\n</nav> </div>\n<div class=\"catalog__top-row\">\n<div class=\"catalog__top-col catalog__top-col--left\">\n<h1 class=\"main-h\" data-catalog-view-block=\"heading\" id=\"j-catalog-header\"></h1> </div>\n</div>\n<div class=\"catalog__middle j-catalog-sticker-parent\">\n<div class=\"catalog-loader\" id=\"j-catalog-loader\"></div>\n\n<div class=\"catalog__middle-col catalog__middle-col--content catalog__middle-col--shifted-right\">\n<div class=\"catalog__content\">\n<div data-catalog-view-block=\"seoText\"></div>\n<div data-catalog-view-block=\"products\" id=\"uid20a5e26b268c96870427968ae0b2e711\">\n<p>Нет товаров</p>\n</div>\n<div class=\"pagination-container\" data-catalog-view-block=\"pagination\">\n\n<div id=\"uid6070bf8dbfa686cbeb171110302fd430\"></div></div>\n</div>\n</div>\n<div class=\"catalog__middle-col catalog__middle-col--left j-catalog-sticker-column\">\n<aside class=\"catalog__sidebar j-catalog-sidebar\">\n<div class=\"catalog__group catalog__group--sidebar\">\n<div class=\"filter-container\" data-catalog-view-block=\"group.2\">\n</div>\n</div>\n</aside>\n</div>\n</div>\n\n</div>\n</div>\n </main>"
+}

@@ -1,0 +1,63 @@
+{
+  "source_url": "https://betrendy.space/brands/",
+  "canonical_url": "https://betrendy.space/brands/",
+  "captured_date": "2026-11-13",
+  "language": "uk",
+  "slug": "brands",
+  "capture_schema": 2,
+  "type": "page",
+  "title": "Бренди",
+  "meta": {
+    "viewport": "width=device-width",
+    "robots": "all",
+    "og:locale": "ua_UA",
+    "og:site_name": "Betrendy.space - інтернет-магазин доглядової косметики ",
+    "og:title": "Бренди",
+    "og:url": "https://betrendy.space/brands/",
+    "og:image": "https://betrendy.space/content/images/2/1500x843l90nn0/88318666110138.jpg",
+    "og:type": "product.group",
+    "position": "1",
+    "title": "Головна Бренди — купити в інтернет магазині Betrendy.space"
+  },
+  "breadcrumbs": [
+    {
+      "title": "Головна",
+      "url": "https://betrendy.space/"
+    }
+  ],
+  "features": {},
+  "gallery": [],
+  "images": [],
+  "links": [
+    "https://betrendy.space/",
+    "https://betrendy.space/be-trendy/",
+    "https://betrendy.space/biser-dlia-vann/",
+    "https://betrendy.space/blog/",
+    "https://betrendy.space/bombochky-dlia-vann/",
+    "https://betrendy.space/brands/./",
+    "https://betrendy.space/care-line/",
+    "https://betrendy.space/collections/",
+    "https://betrendy.space/contacts/",
+    "https://betrendy.space/dohliad-za-tilom/",
+    "https://betrendy.space/en/brands/",
+    "https://betrendy.space/krem-dlia-tila/",
+    "https://betrendy.space/losion-z-shymerom/",
+    "https://betrendy.space/mus-pina-dlia-dushu/",
+    "https://betrendy.space/obmin-ta-povernennya/",
+    "https://betrendy.space/oplata-i-dostavka/",
+    "https://betrendy.space/podarunkovi-aksesuary/",
+    "https://betrendy.space/podarunkovi-nabory/",
+    "https://betrendy.space/pro-nas/",
+    "https://betrendy.space/publichna-oferta/",
+    "https://betrendy.space/rich-vibes/",
+    "https://betrendy.space/ru/brands/",
+    "https://betrendy.space/shimmer-line/",
+    "https://betrendy.space/skraby-dlia-tila/",
+    "https://betrendy.space/soli-dlia-vann/",
+    "https://betrendy.space/spf/",
+    "https://betrendy.space/sprei-dlia-tila/",
+    "https://betrendy.space/vanna-spa/"
+  ],
+  "content_html": "",
+  "main_html": "<main class=\"main\" id=\"main\">\n<div class=\"wrapper\">\n<div class=\"catalog\">\n<div class=\"catalog__top\">\n<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\" itemscope=\"\" itemtype=\"https://schema.org/BreadcrumbList\">\n<div class=\"breadcrumbs-i\" itemprop=\"itemListElement\" itemscope=\"\" itemtype=\"https://schema.org/ListItem\">\n<a href=\"https://betrendy.space/\" itemprop=\"item\"><span itemprop=\"name\">Головна</span></a>\n<meta content=\"1\" itemprop=\"position\"/>\n\n</div>\n<div class=\"breadcrumbs-i\" itemprop=\"itemListElement\" itemscope=\"\" itemtype=\"https://schema.org/ListItem\">\n<span content=\"https://betrendy.space/brands/\" itemprop=\"item\"><span itemprop=\"name\">Бренди</span></span>\n<meta content=\"2\" itemprop=\"position\"/>\n</div>\n</nav> <h1 class=\"main-h\" data-catalog-view-block=\"heading\" id=\"j-catalog-header\">Бренди</h1> </div>\n<div class=\"catalog__middle\">\n<div class=\"catalog__middle-col catalog__middle-col--content\">\n<div class=\"catalog__content\">\n<div data-catalog-view-block=\"seoText\"></div>\n<ul class=\"catalogGrid catalog-grid catalog-grid--l\" data-catalog-view-block=\"brands\">\n<li class=\"catalog-grid__item\">\n<div class=\"catalogCard __brand\">\n<div class=\"catalogCard-box\">\n<div class=\"catalogCard-main\">\n<div class=\"catalogCard-main-b\">\n<a class=\"catalogCard-a\" href=\"https://betrendy.space/be-trendy/\" title=\"Be Trendy\">\n<div class=\"catalogCard-image\">\n<div class=\"catalogCard-image-i\">\n\n</div>\n</div>\n<div class=\"catalogCard-info\">\n<div class=\"catalogCard-title\"><span class=\"a-link\">Be Trendy</span></div>\n</div>\n</a>\n</div>\n</div>\n</div>\n</div>\n</li>\n</ul>\n<div class=\"pagination-container\" data-catalog-view-block=\"pagination\">\n\n<div id=\"uidcb9ebe5db7bc2c326f7dea81f6288910\"></div></div>\n</div>\n</div>\n\n</div>\n</div>\n</div>\n\n</main>"
+}
