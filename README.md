@@ -1,11 +1,9 @@
-# BeTrendy — WordPress migration
+# BeTrendy — перенос на WordPress
 
-Separate project for https://betrendy.space/ (Horoshop → WordPress + WooCommerce on Hostinger).
+Отдельный проект магазина [betrendy.space](https://betrendy.space/).
 
-- Source capture date: 2026-11-13 (Asia/Dubai).
-- Source languages: Ukrainian, Russian, English.
-- Source content, original images, import scripts, and theme files belong under `betrendy/`.
-- This repository is independent from `monikacyber/uniks-prototype`.
-- No passwords, API keys, customer records, or orders are stored here.
+Исходная платформа — Хорошоп. Цель — отдельный WordPress + WooCommerce на Hostinger. Материалы, тема и скрипты находятся в `betrendy/`. Проект не использует файлы сайта ЮНИКС.
 
-Migration is in progress. No production domain has been switched.
+Снимок публичных материалов: 13 ноября 2026, Asia/Dubai. Перенос в работе; основной домен не переключён.
+
+В репозиторий не включаются пароли, ключи, база покупателей и история заказов.

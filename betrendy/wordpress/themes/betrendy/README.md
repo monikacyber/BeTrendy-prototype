@@ -1,0 +1,28 @@
+# BeTrendy block theme
+
+Native block theme for WordPress 6.6+ and WooCommerce. The importer supplies page content, products and media; the theme only supplies presentation.
+
+## Installation
+
+1. Install and configure WooCommerce on the separate BeTrendy WordPress site.
+2. Upload the `betrendy` theme directory (or a ZIP with that directory at its root) and activate it.
+3. Set the site title to Be Trendy and assign the imported logo in the Site Editor. The site title is used when no logo is set.
+4. Import the pages and product catalogue. Assign the imported homepage in Settings → Reading.
+5. Review the header and footer in Appearance → Editor. Their navigation uses the original category and information-page paths. The cart link uses `/cart/` and the 404 page uses `/shop/`.
+
+## Editable content
+
+All templates and template parts use registered WordPress core blocks. The homepage template renders `core/post-content`, so its banners and sections remain editable in the page editor. No media IDs, menu post IDs or product IDs are hard-coded.
+
+WooCommerce supplies its product, product archive, cart and checkout templates and owns all purchasing behavior. This theme declares WooCommerce support and styles both classic and block product output. It does not implement payment, shipping, stock or order logic.
+
+Source appearance: Geologica, white background, dark `#2F3039` text, `#0D28D9` primary blue and `#D41D1D` sale red. Geologica loads from the same Google Fonts family used by the source site, with Arial/Helvetica fallbacks. The layout adapts for narrow screens and supports keyboard focus and reduced-motion preferences.
+
+## Migration integration
+
+- Information pages and category landing pages must exist at the source paths used by navigation, or the importer must rewrite the navigation links to their new routes.
+- `/ru/` and `/en/` language links need their corresponding imported homepages. Theme text is Ukrainian; translated header/footer template parts or a multilingual plugin are required for full navigation localization.
+- The free-delivery banner preserves the source site's “Від 1500 грн безкоштовна доставка”. It is display text; the corresponding shipping rule must be configured in WooCommerce before launch.
+- WooCommerce page selection, gateways and shipping need runtime verification on the target installation. No WordPress or WooCommerce runtime is bundled with this theme.
+
+Source reviewed on 2026-11-13: https://betrendy.space/.

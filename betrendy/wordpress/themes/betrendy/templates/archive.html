@@ -1,0 +1,16 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+<!-- wp:group {"tagName":"main","className":"bt-main","layout":{"type":"constrained","contentSize":"1440px"}} -->
+<main class="wp-block-group bt-main">
+<!-- wp:query-title {"type":"archive","showPrefix":false} /-->
+<!-- wp:query {"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true}} -->
+<div class="wp-block-query">
+<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"className":"bt-post-card","layout":{"type":"default"}} -->
+<div class="wp-block-group bt-post-card"><!-- wp:post-featured-image {"isLink":true} /--><!-- wp:post-title {"level":2,"isLink":true} /--><!-- wp:post-date {"fontSize":"small"} /--><!-- wp:post-excerpt {"moreText":"Читати далі","excerptLength":24} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} --><!-- wp:query-pagination-previous {"label":"Назад"} /--><!-- wp:query-pagination-numbers /--><!-- wp:query-pagination-next {"label":"Далі"} /--><!-- /wp:query-pagination -->
+<!-- wp:query-no-results --><!-- wp:paragraph --><p>Публікацій не знайдено.</p><!-- /wp:paragraph --><!-- /wp:query-no-results -->
+</div><!-- /wp:query -->
+</main><!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

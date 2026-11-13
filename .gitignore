@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+wp-config.php
+*.log
+node_modules/
+__pycache__/
+.venv/
+betrendy/.cache/
+betrendy/source/*raw*
+betrendy/source/sample-product.html
+betrendy/source/sample-product.json
+betrendy/source/homepage.html
+betrendy/packages/
+
