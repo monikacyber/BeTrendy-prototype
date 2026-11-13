@@ -32,3 +32,19 @@ add_action( 'enqueue_block_assets', function () {
         null
     );
 } );
+
+// Let an authorised editor review the imported draft catalogue inside page previews.
+add_filter( 'woocommerce_shortcode_products_query', function ( $query ) {
+    if ( is_preview() && current_user_can( 'edit_products' ) ) {
+        $query['post_status'] = array( 'publish', 'draft' );
+        $query['meta_query'][] = array( 'key' => '_betrendy_source_url', 'compare' => 'EXISTS' );
+    }
+    return $query;
+} );
+
+add_filter( 'woocommerce_loop_product_link', function ( $link, $product ) {
+    if ( is_preview() && current_user_can( 'edit_post', $product->get_id() ) && 'draft' === $product->get_status() ) {
+        return get_preview_post_link( $product->get_id() );
+    }
+    return $link;
+}, 10, 2 );

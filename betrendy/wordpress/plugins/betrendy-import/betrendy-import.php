@@ -121,7 +121,7 @@ final class BeTrendy_Draft_Import {
     }
 
     private static function image_urls( $html ) {
-        preg_match_all( '~https://betrendy\.space/content/[^\s"\'<>]+~u', $html, $matches );
+        preg_match_all( '~https://(?:betrendy\.space|uniksshop\.com)/content/[^\s"\'<>]+~u', $html, $matches );
         return array_values( array_unique( array_map( static function ( $url ) { return html_entity_decode( $url, ENT_QUOTES, 'UTF-8' ); }, $matches[0] ) ) );
     }
 
@@ -132,24 +132,38 @@ final class BeTrendy_Draft_Import {
         if ( $id && self::TYPE === get_post_type( $id ) ) {
             $summary = $state;
             unset( $summary['term_ids'] );
-            wp_update_post( array( 'ID' => $id, 'post_status' => 'private',
-                'post_content' => '<pre>' . esc_html( wp_json_encode( $summary, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE ) ) . '</pre>' ) );
+            wp_update_post( wp_slash( array( 'ID' => $id, 'post_status' => 'private',
+                'post_content' => '<pre>' . esc_html( wp_json_encode( $summary, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE ) ) . '</pre>' ) ) );
         }
         return $state;
     }
 
     public static function activate() {
-        if ( ! current_user_can( 'activate_plugins' ) ) { wp_die( 'Administrator access is required.' ); }
+        // WordPress/Jetpack authorizes the plugin activation before this hook runs.
+        // A remote authorized activation can have no local current-user context.
+        // REST commands remain independently restricted to manage_options below.
         self::register_status();
         try {
             self::environment( true );
             $data = self::data();
+            $author = get_current_user_id();
+            if ( ! $author || ! user_can( $author, 'manage_options' ) ) {
+                $account = get_user_by( 'email', get_option( 'admin_email' ) );
+                $author = $account && user_can( $account->ID, 'manage_options' ) ? (int) $account->ID : 0;
+                if ( ! $author ) {
+                    $admins = get_users( array( 'role' => 'administrator', 'number' => 1, 'orderby' => 'ID', 'order' => 'ASC', 'fields' => 'ID' ) );
+                    $author = $admins && user_can( (int) $admins[0], 'manage_options' ) ? (int) $admins[0] : 0;
+                }
+            }
+            if ( ! $author ) { throw new RuntimeException( 'An existing site administrator is required as the draft owner.' ); }
             $id = (int) get_option( 'betrendy_import_status_post', 0 );
             if ( ! $id || self::TYPE !== get_post_type( $id ) ) {
                 $id = wp_insert_post( array( 'post_type' => self::TYPE, 'post_status' => 'private',
-                    'post_title' => 'BeTrendy draft import', 'post_name' => 'betrendy-draft-import' ), true );
+                    'post_author' => $author, 'post_title' => 'BeTrendy draft import', 'post_name' => 'betrendy-draft-import' ), true );
                 if ( is_wp_error( $id ) ) { throw new RuntimeException( $id->get_error_message() ); }
                 update_option( 'betrendy_import_status_post', $id, false );
+            } elseif ( ! get_post_field( 'post_author', $id ) ) {
+                wp_update_post( array( 'ID' => $id, 'post_author' => $author ) );
             }
             $state = get_option( self::STATE, array() );
             if ( empty( $state ) ) {
@@ -326,6 +340,10 @@ final class BeTrendy_Draft_Import {
         return 0;
     }
 
+    private static function author() {
+        return (int) get_post_field( 'post_author', (int) get_option( 'betrendy_import_status_post' ) );
+    }
+
     private static function import_media( $url, $label, $data ) {
         if ( self::attachment_id( $url ) ) { return false; }
         $item = $data['media'][ $url ];
@@ -356,7 +374,7 @@ final class BeTrendy_Draft_Import {
         if ( ! is_file( $temp ) || ! hash_equals( $item['sha256'], hash_file( 'sha256', $temp ) ) ) {
             @unlink( $temp ); throw new RuntimeException( 'Archived image checksum mismatch: ' . basename( $item['path'] ) );
         }
-        $id = media_handle_sideload( array( 'name' => basename( $item['path'] ), 'tmp_name' => $temp ), 0, $label );
+        $id = media_handle_sideload( array( 'name' => basename( $item['path'] ), 'tmp_name' => $temp ), 0, $label, array( 'post_author' => self::author() ) );
         if ( is_wp_error( $id ) ) { @unlink( $temp ); throw new RuntimeException( $id->get_error_message() ); }
         update_post_meta( $id, '_betrendy_source_url', $url ); update_post_meta( $id, '_wp_attachment_image_alt', $label );
         $map = get_option( 'betrendy_source_media', array() ); $map[ $url ] = $id; update_option( 'betrendy_source_media', $map, false );
@@ -364,7 +382,7 @@ final class BeTrendy_Draft_Import {
     }
 
     private static function html( $html ) {
-        $html = preg_replace_callback( '~https://betrendy\.space/content/[^\s"\'<>]+~u', static function ( $match ) {
+        $html = preg_replace_callback( '~https://(?:betrendy\.space|uniksshop\.com)/content/[^\s"\'<>]+~u', static function ( $match ) {
             $url = html_entity_decode( $match[0], ENT_QUOTES, 'UTF-8' ); $id = self::attachment_id( $url );
             if ( ! $id ) { throw new RuntimeException( 'Content image was not imported yet.' ); }
             return wp_get_attachment_url( $id );
@@ -395,6 +413,7 @@ final class BeTrendy_Draft_Import {
             '_betrendy_seo_title' => $row['seo_title'], '_betrendy_seo_description' => $row['seo_description'] ) as $key => $value ) { $product->update_meta_data( $key, $value ); }
         $id = $product->save();
         if ( ! $id ) { throw new RuntimeException( 'WooCommerce did not save the draft product.' ); }
+        wp_update_post( array( 'ID' => $id, 'post_author' => self::author() ) );
         self::route( $path, 'index.php?post_type=product&p=' . $id ); return true;
     }
 
@@ -407,10 +426,10 @@ final class BeTrendy_Draft_Import {
         else {
             $conflict = get_page_by_path( $row['slug'], OBJECT, array( 'page', 'post' ) );
             if ( $conflict ) { throw new RuntimeException( 'Unrelated page or post conflicts with ' . $row['slug'] ); }
-            $id = wp_insert_post( array( 'post_type' => $row['type'], 'post_status' => 'draft', 'post_title' => $row['title'],
+            $id = wp_insert_post( wp_slash( array( 'post_type' => $row['type'], 'post_status' => 'draft', 'post_author' => self::author(), 'post_title' => $row['title'],
                 'post_name' => $row['slug'], 'post_content' => self::html( $row['content_blocks'] ),
                 'meta_input' => array( '_betrendy_source_url' => $row['source_url'], '_betrendy_source_path' => $path,
-                    '_betrendy_seo_title' => $row['seo_title'], '_betrendy_seo_description' => $row['seo_description'] ) ), true );
+                    '_betrendy_seo_title' => $row['seo_title'], '_betrendy_seo_description' => $row['seo_description'] ) ) ), true );
             if ( is_wp_error( $id ) ) { throw new RuntimeException( $id->get_error_message() ); }
             $created = true;
         }
