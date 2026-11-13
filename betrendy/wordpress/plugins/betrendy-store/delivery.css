@@ -1,0 +1,9 @@
+/* A zero placeholder is not a free-delivery offer. Each rate name states either
+   manager-confirmed carrier cost or free delivery from 1500 UAH. Keep that name
+   visible and remove WooCommerce's redundant zero-price "FREE" badges. */
+.wc-block-components-totals-shipping .wc-block-components-totals-item__value strong,
+.wc-block-components-shipping-rates-control__package__description--free,
+.wc-block-components-shipping-rates-control label:has(input[value^="betrendy_nova_poshta:"]) .wc-block-components-radio-control__secondary-label {
+    display: none;
+}
+.bt-delivery-note { line-height: 1.65; }

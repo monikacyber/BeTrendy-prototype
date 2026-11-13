@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-11-13T19:07:00+00:00",
+  "browser": "Safari",
+  "authentication": "guest",
+  "home_public": true,
+  "product_gallery_visible": true,
+  "add_to_cart": true,
+  "cart_to_checkout": true,
+  "bacs_visible": true,
+  "delivery_point_field_visible": true,
+  "phone_required": true,
+  "misleading_free_badges_removed": true,
+  "shipping_labels_verified_in_accessibility_tree": true,
+  "mobile_screenshots": {
+    "viewport_width": 390,
+    "home": "passed",
+    "product": "passed"
+  },
+  "real_order_submitted": false,
+  "payment_executed": false,
+  "email_delivery_verified": false
+}

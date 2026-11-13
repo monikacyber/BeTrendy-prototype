@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-11-13T18:53:27.492604+00:00",
+  "site_url": "https://betrendy.online",
+  "public_products": 61,
+  "products_with_images": 61,
+  "tested_product_id": 268,
+  "tested_sku": "100001",
+  "orders_created": 0,
+  "emails_sent": 0,
+  "tests": {
+    "below_free_delivery_threshold": {
+      "items_count": 1,
+      "total_items": "24900",
+      "currency": "UAH",
+      "payment_methods": [
+        "bacs"
+      ],
+      "errors": [],
+      "shipping_rates": [
+        {
+          "id": "betrendy_nova_poshta:1:branch",
+          "name": "Нова пошта — відділення (тариф перевізника; суму підтвердить менеджер)",
+          "price": "0"
+        },
+        {
+          "id": "betrendy_nova_poshta:1:locker",
+          "name": "Нова пошта — поштомат (тариф перевізника; суму підтвердить менеджер)",
+          "price": "0"
+        },
+        {
+          "id": "betrendy_nova_poshta:1:courier",
+          "name": "Нова пошта — кур’єр (тариф перевізника; суму підтвердить менеджер)",
+          "price": "0"
+        }
+      ]
+    },
+    "select_locker_delivery": true,
+    "above_free_delivery_threshold": {
+      "items_count": 7,
+      "total_items": "174300",
+      "currency": "UAH",
+      "payment_methods": [
+        "bacs"
+      ],
+      "errors": [],
+      "shipping_rates": [
+        {
+          "id": "betrendy_nova_poshta:1:branch",
+          "name": "Нова пошта — відділення (безкоштовно)",
+          "price": "0"
+        },
+        {
+          "id": "betrendy_nova_poshta:1:locker",
+          "name": "Нова пошта — поштомат (безкоштовно)",
+          "price": "0"
+        },
+        {
+          "id": "betrendy_nova_poshta:1:courier",
+          "name": "Нова пошта — кур’єр (безкоштовно)",
+          "price": "0"
+        }
+      ]
+    }
+  },
+  "passed": true,
+  "guest_cart_cleared": true
+}

@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "index": 389,
+  "total": 389,
+  "created": 143,
+  "reused": 246,
+  "sha256_verified": 389,
+  "error": "",
+  "started_at": "2026-11-13T18:38:18+00:00",
+  "manifest_sha256": "cae9fe8509bb589ec91298bc1cc1496b6b4956e4e5593c47ac33e1b24bf6eb6d",
+  "updated_at": "2026-11-13T18:50:59+00:00",
+  "completed_at": "2026-11-13T18:50:59+00:00"
+}

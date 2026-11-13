@@ -1,8 +1,8 @@
 {
-  "created_at": "2026-11-13T18:29:22.609437+00:00",
+  "created_at": "2026-11-13T19:06:00.091150+00:00",
   "public_export": true,
   "source_files_modified": false,
-  "file_count_before_report": 323,
+  "file_count_before_report": 334,
   "financial_values_discovered_by_category": {
     "iban": 1,
     "personal_tax_id": 1,
@@ -11,9 +11,9 @@
     "bank_name": 3
   },
   "redaction_occurrences_by_category": {
-    "payment_recipient": 208,
-    "iban": 202,
-    "personal_tax_id": 27,
+    "payment_recipient": 209,
+    "iban": 203,
+    "personal_tax_id": 28,
     "bank_name": 9,
     "bank_code": 9
   },
@@ -26,6 +26,14 @@
         "personal_tax_id": 9,
         "bank_name": 3,
         "bank_code": 3
+      }
+    },
+    {
+      "path": "betrendy/data/wordpress-live-pages.json",
+      "redactions": {
+        "payment_recipient": 1,
+        "iban": 1,
+        "personal_tax_id": 1
       }
     },
     {

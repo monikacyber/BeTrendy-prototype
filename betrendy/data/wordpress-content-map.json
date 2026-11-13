@@ -6,42 +6,42 @@
     {
       "id": 339,
       "slug": "publichna-oferta",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/publichna-oferta/",
       "title": "Публічна оферта"
     },
     {
       "id": 338,
       "slug": "pro-nas",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/pro-nas/",
       "title": "Про нас"
     },
     {
       "id": 333,
       "slug": "home",
-      "status": "draft",
-      "link": "https://betrendy.online/?page_id=333",
+      "status": "publish",
+      "link": "https://betrendy.online/",
       "title": "Be Trendy"
     },
     {
       "id": 335,
       "slug": "oplata-i-dostavka",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/oplata-i-dostavka/",
       "title": "Оплата і доставка"
     },
     {
       "id": 334,
       "slug": "obmin-ta-povernennya",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/obmin-ta-povernennya/",
       "title": "Обмін та повернення"
     },
     {
       "id": 331,
       "slug": "contacts",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/contacts/",
       "title": "Контакти"
     }
@@ -50,14 +50,14 @@
     {
       "id": 336,
       "slug": "parfumovani-mus-piny-dlia-dushu-novynka-vid-be-trendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/parfumovani-mus-piny-dlia-dushu-novynka-vid-be-trendy/",
       "title": "Новинка! Парфумовані  мус-піни для душу від BE TRENDY"
     },
     {
       "id": 332,
       "slug": "dohliad-ta-zakhyst-2-v-1-z-losonamy-vid-be-trendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/dohliad-ta-zakhyst-2-v-1-z-losonamy-vid-be-trendy/",
       "title": "Догляд та захист 2 в 1  з лосьонами від  BE TRENDY"
     }
@@ -66,7 +66,7 @@
     {
       "id": 330,
       "slug": "shymmer-skrab-romantic-datebanka300-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/shymmer-skrab-romantic-datebanka300-h/",
       "featured_media": 257,
       "title": "Шиммер-скраб «Romantic Date», банка, 300 г"
@@ -74,7 +74,7 @@
     {
       "id": 329,
       "slug": "shymmer-skrab-magic-partybanka300-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/shymmer-skrab-magic-partybanka300-h/",
       "featured_media": 254,
       "title": "Шимер-скраб «Magic Party», банка, 300 г"
@@ -82,7 +82,7 @@
     {
       "id": 328,
       "slug": "shymmer-skrab-golden-glowbanka300-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/shymmer-skrab-golden-glowbanka300-h/",
       "featured_media": 251,
       "title": "Шимер-скраб «Golden Glow», банка, 300 г"
@@ -90,7 +90,7 @@
     {
       "id": 327,
       "slug": "shymmer-skrab-emerald-shine-banka300-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/shymmer-skrab-emerald-shine-banka300-h/",
       "featured_media": 248,
       "title": "Шимер-скраб «Emerald Shine», банка, 300 г"
@@ -98,7 +98,7 @@
     {
       "id": 326,
       "slug": "podarunkovyi-nabir-shining-star-z-silliu-skrabom-i-spreiem-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-shining-star-z-silliu-skrabom-i-spreiem-betrendy/",
       "featured_media": 247,
       "title": "Подарунковий набір Shining Star з сіллю, скрабом і спреєм BeTrendy"
@@ -106,7 +106,7 @@
     {
       "id": 324,
       "slug": "podarunkovyi-nabir-shining-star-z-bombochkoiu-silliu-ta-losionom-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-shining-star-z-bombochkoiu-silliu-ta-losionom-betrendy/",
       "featured_media": 246,
       "title": "Подарунковий набір Shining Star з бомбочкою, сіллю та лосьйоном BeTrendy"
@@ -114,7 +114,7 @@
     {
       "id": 323,
       "slug": "podarunkovyi-nabir-romantic-date-z-silliu-skrabom-i-spreiem-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-romantic-date-z-silliu-skrabom-i-spreiem-betrendy/",
       "featured_media": 245,
       "title": "Подарунковий набір Romantic Date з сіллю, скрабом і спреєм BeTrendy"
@@ -122,7 +122,7 @@
     {
       "id": 322,
       "slug": "podarunkovyi-nabir-rich-vibes-zi-skrabom-kremom-i-balzamom-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-rich-vibes-zi-skrabom-kremom-i-balzamom-betrendy/",
       "featured_media": 244,
       "title": "Подарунковий набір Rich Vibes зі скрабом, кремом і бальзамом BeTrendy"
@@ -130,7 +130,7 @@
     {
       "id": 321,
       "slug": "podarunkovyi-nabir-rich-vibes-zi-skrabom-i-kremom-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-rich-vibes-zi-skrabom-i-kremom-betrendy/",
       "featured_media": 243,
       "title": "Подарунковий набір Rich Vibes зі скрабом і кремом BeTrendy"
@@ -138,7 +138,7 @@
     {
       "id": 320,
       "slug": "podarunkovyi-nabir-rich-vibes-z-perlynamy-silliu-ta-oliieiu-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-rich-vibes-z-perlynamy-silliu-ta-oliieiu-betrendy/",
       "featured_media": 242,
       "title": "Подарунковий набір Rich Vibes з перлинами, сіллю та олією BeTrendy"
@@ -146,7 +146,7 @@
     {
       "id": 319,
       "slug": "podarunkovyi-nabir-rich-vibes-z-oliieiu-kremom-i-balzamom-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-rich-vibes-z-oliieiu-kremom-i-balzamom-betrendy/",
       "featured_media": 241,
       "title": "Подарунковий набір Rich Vibes з олією, кремом і бальзамом BeTrendy"
@@ -154,7 +154,7 @@
     {
       "id": 318,
       "slug": "podarunkovyi-nabir-pink-z-bombochkoiu-ta-skrabom-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-pink-z-bombochkoiu-ta-skrabom-betrendy/",
       "featured_media": 240,
       "title": "Подарунковий набір Pink з бомбочкою та скрабом BeTrendy"
@@ -162,7 +162,7 @@
     {
       "id": 317,
       "slug": "podarunkovyi-nabir-magic-party-zi-skrabom-i-spreiem-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-magic-party-zi-skrabom-i-spreiem-betrendy/",
       "featured_media": 239,
       "title": "Подарунковий набір Magic Party зі скрабом і спреєм BeTrendy"
@@ -170,7 +170,7 @@
     {
       "id": 316,
       "slug": "podarunkovyi-nabir-jasmine-sandal-z-kremom-i-skrabom-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-jasmine-sandal-z-kremom-i-skrabom-betrendy/",
       "featured_media": 238,
       "title": "Подарунковий набір Jasmine Sandal з кремом і скрабом BeTrendy"
@@ -178,7 +178,7 @@
     {
       "id": 315,
       "slug": "podarunkovyi-nabir-golden-glow-z-perlynamy-skrabom-i-spreiem-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-golden-glow-z-perlynamy-skrabom-i-spreiem-betrendy/",
       "featured_media": 237,
       "title": "Подарунковий набір Golden Glow з перлинами, скрабом і спреєм BeTrendy"
@@ -186,7 +186,7 @@
     {
       "id": 314,
       "slug": "podarunkovyi-nabir-emerald-shine-z-perlynamy-skrabom-i-bombochkoiu-betrendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkovyi-nabir-emerald-shine-z-perlynamy-skrabom-i-bombochkoiu-betrendy/",
       "featured_media": 236,
       "title": "Подарунковий набір Emerald Shine з перлинами, скрабом і бомбочкою BeTrendy"
@@ -194,7 +194,7 @@
     {
       "id": 313,
       "slug": "podarunkove-pakuvannia-tsukerka",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/podarunkove-pakuvannia-tsukerka/",
       "featured_media": 235,
       "title": "Подарункове пакування «Цукерка»"
@@ -202,7 +202,7 @@
     {
       "id": 312,
       "slug": "parfum-skrab-d-t-marshmallow-vanilla-300-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/parfum.-skrab-d-t-marshmallow-vanilla-300-h/",
       "featured_media": 227,
       "title": "Парфумований скраб для тіла «Marshmallow Vanilla», 300 г"
@@ -210,7 +210,7 @@
     {
       "id": 311,
       "slug": "parfum-skrab-d-t-magnolia-rose-300-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/parfum.-skrab-d-t-magnolia-rose-300-h/",
       "featured_media": 217,
       "title": "Парфумований скраб для тіла «Magnolia Rosе», 300 г"
@@ -218,7 +218,7 @@
     {
       "id": 310,
       "slug": "parfum-skrab-d-t-jasmine-sandal-300-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/parfum.-skrab-d-t-jasmine-sandal-300-h/",
       "featured_media": 208,
       "title": "Парфумований скраб для тіла «Jasmine Sandal», 300 г"
@@ -226,7 +226,7 @@
     {
       "id": 309,
       "slug": "paket-podarunkovyi-betrendy-white",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/paket-podarunkovyi-betrendy-white/",
       "featured_media": 207,
       "title": "Пакет подарунковий BeTrendy White"
@@ -234,7 +234,7 @@
     {
       "id": 308,
       "slug": "paket-podarunkovyi-betrendy-silver",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/paket-podarunkovyi-betrendy-silver/",
       "featured_media": 206,
       "title": "Пакет подарунковий BeTrendy Silver"
@@ -242,7 +242,7 @@
     {
       "id": 307,
       "slug": "be-trendy-zhyvylnyi-krem-t-marshmallow-vanilla-230-ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-zhyvylnyi-krem-t-marshmallow-vanilla-230-ml/",
       "featured_media": 195,
       "title": "Живильний крем для тіла «Marshmallow Vanilla», 230 мл"
@@ -250,7 +250,7 @@
     {
       "id": 306,
       "slug": "be-trendy-zhyvylnyi-krem-t-magnolia-rose-230ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-zhyvylnyi-krem-t-magnolia-rose-230ml/",
       "featured_media": 185,
       "title": "Живильний крем для тіла «Magnolia Rosе», 230 мл"
@@ -258,7 +258,7 @@
     {
       "id": 305,
       "slug": "be-trendy-zhyvylnyi-krem-t-jasmine-sandal-230ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-zhyvylnyi-krem-t-jasmine-sandal-230ml/",
       "featured_media": 175,
       "title": "Живильний крем для тіла «Jasmine Sandal», 230 мл"
@@ -266,7 +266,7 @@
     {
       "id": 304,
       "slug": "be-trendy-zhyvylnyi-krem-t-bergamot-patchouli-230ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-zhyvylnyi-krem-t-bergamot-patchouli-230ml/",
       "featured_media": 166,
       "title": "Живильний крем для тіла «Bergamot Patchouli», 230 мл"
@@ -274,7 +274,7 @@
     {
       "id": 303,
       "slug": "be-trendy-sprei-shymmer-dlia-tila-shining-star-155-ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-sprei-shymmer-dlia-tila-shining-star-155-ml/",
       "featured_media": 161,
       "title": "Спрей-шимер для тіла «Shining Star», 155 мл"
@@ -282,7 +282,7 @@
     {
       "id": 302,
       "slug": "be-trendy-sprei-shymmer-dlia-tila-romantis-date-155-ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-sprei-shymmer-dlia-tila-romantis-date-155-ml/",
       "featured_media": 156,
       "title": "Спрей-шимер для тіла «Romantiс Date», 155 мл"
@@ -290,7 +290,7 @@
     {
       "id": 301,
       "slug": "be-trendy-sprei-shymmer-dlia-tila-magic-party-155-ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-sprei-shymmer-dlia-tila-magic-party-155-ml/",
       "featured_media": 149,
       "title": "Спрей-шимер для тіла «Magic Party», 155 мл"
@@ -298,7 +298,7 @@
     {
       "id": 300,
       "slug": "be-trendy-sprei-shymmer-dlia-tila-golden-glow-155-ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-sprei-shymmer-dlia-tila-golden-glow-155-ml/",
       "featured_media": 142,
       "title": "Спрей-шимер для тіла «Golden Glow», 155 мл"
@@ -306,7 +306,7 @@
     {
       "id": 299,
       "slug": "be-trendy-sil-dlia-vanny-shining-star-250-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-sil-dlia-vanny-shining-star-250-h/",
       "featured_media": 141,
       "title": "Сіль для ванни «Shining Star», 250 г"
@@ -314,7 +314,7 @@
     {
       "id": 298,
       "slug": "be-trendy-sil-dlia-vanny-romantis-date-250-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-sil-dlia-vanny-romantis-date-250-h/",
       "featured_media": 140,
       "title": "Сіль для ванни «Romantiс Date», 250 г"
@@ -322,7 +322,7 @@
     {
       "id": 297,
       "slug": "be-trendy-sil-dlia-vanny-golden-glow-250-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-sil-dlia-vanny-golden-glow-250-h/",
       "featured_media": 139,
       "title": "Сіль для ванни «Golden Glow», 250 г"
@@ -330,7 +330,7 @@
     {
       "id": 296,
       "slug": "be-trendy-sil-dlia-vanny-emerald-shine-250-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-sil-dlia-vanny-emerald-shine-250-h/",
       "featured_media": 138,
       "title": "Сіль для ванни «Emerald Shine», 250 г"
@@ -338,7 +338,7 @@
     {
       "id": 295,
       "slug": "be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-shining-star100-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-shining-star100-h/",
       "featured_media": 132,
       "title": "Шипучий засіб для ванн «Bath bomb «Shining Star», 100 г"
@@ -346,7 +346,7 @@
     {
       "id": 294,
       "slug": "be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-romantic-date-100-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-romantic-date-100-h/",
       "featured_media": 126,
       "title": "Шипучий засіб для ванн «Bath bomb «Romantic Date», 100 г"
@@ -354,7 +354,7 @@
     {
       "id": 293,
       "slug": "be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-golden-glow100-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-golden-glow100-h/",
       "featured_media": 120,
       "title": "Шипучий засіб для ванн «Bath bomb «Golden Glow», 100 г"
@@ -362,7 +362,7 @@
     {
       "id": 292,
       "slug": "be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-emerald-shine100-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-emerald-shine100-h/",
       "featured_media": 116,
       "title": "Шипучий засіб для ванн «Bath bomb «Emerald Shine», 100 г"
@@ -370,7 +370,7 @@
     {
       "id": 291,
       "slug": "be-trendy-shymmernyi-skrab-iz-tsinnymy-oliiamy-rich-vibes-collection",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-shymmernyi-skrab-iz-tsinnymy-oliiamy-rich-vibes-collection/",
       "featured_media": 112,
       "title": "Шимерний скраб для тіла із цінними оліями | Rich Vibes Collection | 300 г"
@@ -378,7 +378,7 @@
     {
       "id": 290,
       "slug": "be-trendy-shymmer-skrab-shining-star-sukhyi-200-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-shymmer-skrab-shining-star-sukhyi-200-h/",
       "featured_media": 109,
       "title": "Шиммер-скраб «Shining Star», сухий, 200 г"
@@ -386,7 +386,7 @@
     {
       "id": 289,
       "slug": "be-trendy-shymmer-skrab-romantic-date-sukhyi-200-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-shymmer-skrab-romantic-date-sukhyi-200-h/",
       "featured_media": 106,
       "title": "Шиммер-скраб «Romantiс Date», сухий, 200 г"
@@ -394,7 +394,7 @@
     {
       "id": 288,
       "slug": "be-trendy-shymmer-skrab-magic-party-sukhyi-200-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-shymmer-skrab-magic-party-sukhyi-200-h/",
       "featured_media": 103,
       "title": "Шиммер-скраб «Magic Party», сухий, 200 г"
@@ -402,7 +402,7 @@
     {
       "id": 287,
       "slug": "be-trendy-shymmer-skrab-emerald-shine-sukhyi-200-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-shymmer-skrab-emerald-shine-sukhyi-200-h/",
       "featured_media": 100,
       "title": "Шиммер-скраб «Emerald Shine», сухий, 200 г"
@@ -410,7 +410,7 @@
     {
       "id": 286,
       "slug": "be-trendy-parfumovana-oliia-dlia-dushu-rich-vibes-collection",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-parfumovana-oliia-dlia-dushu-rich-vibes-collection/",
       "featured_media": 94,
       "title": "Парфумована олія для душу | Rich Vibes Collection | 250 мл"
@@ -418,7 +418,7 @@
     {
       "id": 285,
       "slug": "be-trendy-parfum-very-rich-rich-vibes-collection",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-parfum-very-rich-rich-vibes-collection/",
       "featured_media": 92,
       "title": "Парфум «Very Rich» | Rich Vibes Collection | 10 мл"
@@ -426,7 +426,7 @@
     {
       "id": 284,
       "slug": "be-trendy-parfium-skrab-d-t-bergamot-patchouli-300-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-parfium.-skrab-d-t-bergamot-patchouli-300-h/",
       "featured_media": 77,
       "title": "Парфумований скраб для тіла «Bergamot Patchouli», 300 г"
@@ -434,7 +434,7 @@
     {
       "id": 283,
       "slug": "be-trendy-mus-pina-dlia-dushu-frangipani-acai-430-ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-mus-pina-dlia-dushu-frangipani-acai-430-ml/",
       "featured_media": 70,
       "title": "Мус-піна для душу «Frangipani Acai», 430 мл"
@@ -442,7 +442,7 @@
     {
       "id": 282,
       "slug": "be-trendy-mus-pina-dlia-dushu-cotton-mangosteen-430-ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-mus-pina-dlia-dushu-cotton-mangosteen-430-ml/",
       "featured_media": 62,
       "title": "Мус-піна для душу «Cotton & Mangosteen», 430 мл"
@@ -450,7 +450,7 @@
     {
       "id": 281,
       "slug": "be-trendy-morska-sil-dlia-vanny-rich-vibes-collection",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-morska-sil-dlia-vanny-rich-vibes-collection/",
       "featured_media": 55,
       "title": "Морська сіль для ванни | Rich Vibes Collection | 300 г"
@@ -458,7 +458,7 @@
     {
       "id": 280,
       "slug": "be-trendy-losion-shymer-d-tila-highlighter-shining-star-spf-25100-ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-losion-shymer-d-tila-highlighter-shining-star-spf-25100-ml/",
       "featured_media": 52,
       "title": "Лосьйон-шимер для тіла «Highlighter Shining Star, SPF 25», 100 мл"
@@ -466,7 +466,7 @@
     {
       "id": 279,
       "slug": "be-trendy-losion-shymer-d-tila-highlighter-romantic-date-spf-25100-ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-losion-shymer-d-tila-highlighter-romantic-date-spf-25100-ml/",
       "featured_media": 49,
       "title": "Лосьйон-шимер для тіла «Highlighter Romantic Date, SPF 25», 100 мл"
@@ -474,7 +474,7 @@
     {
       "id": 278,
       "slug": "be-trendy-losion-shymer-d-tila-highlighter-magic-party-spf-25100-ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-losion-shymer-d-tila-highlighter-magic-party-spf-25100-ml/",
       "featured_media": 46,
       "title": "Лосьйон-шимер для тіла «Highlighter Magic Party, SPF 25», 100 мл"
@@ -482,7 +482,7 @@
     {
       "id": 277,
       "slug": "be-trendy-losion-shymer-d-tila-highlighter-golden-glow-spf-25100-ml",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-losion-shymer-d-tila-highlighter-golden-glow-spf-25100-ml/",
       "featured_media": 45,
       "title": "Лосьйон-шимер для тіла «Highlighter Golden Glow, SPF 25», 100 мл"
@@ -490,7 +490,7 @@
     {
       "id": 275,
       "slug": "be-trendy-kashemirovyi-krem-dlia-tila-rich-vibes-collection",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-kashemirovyi-krem-dlia-tila-rich-vibes-collection/",
       "featured_media": 37,
       "title": "Кашеміровий крем для тіла | Rich Vibes Collection | 230 мл"
@@ -498,7 +498,7 @@
     {
       "id": 274,
       "slug": "be-trendy-biser-dlia-vanny-shining-star-150-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-biser-dlia-vanny-shining-star-150-h/",
       "featured_media": 36,
       "title": "Бісер для ванни «Shining Star», 150 г"
@@ -506,7 +506,7 @@
     {
       "id": 273,
       "slug": "be-trendy-biser-dlia-vanny-romantis-date-150-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-biser-dlia-vanny-romantis-date-150-h/",
       "featured_media": 35,
       "title": "Бісер для ванни «Romantiс Date», 150 г"
@@ -514,7 +514,7 @@
     {
       "id": 272,
       "slug": "be-trendy-biser-dlia-vanny-rich-vibes-collection",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-biser-dlia-vanny-rich-vibes-collection/",
       "featured_media": 28,
       "title": "Бісер для ванни | Rich Vibes Collection | 200 г"
@@ -522,7 +522,7 @@
     {
       "id": 271,
       "slug": "be-trendy-biser-dlia-vanny-golden-glow-150-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-biser-dlia-vanny-golden-glow-150-h/",
       "featured_media": 27,
       "title": "Бісер для ванни «Golden Glow», 150 г"
@@ -530,7 +530,7 @@
     {
       "id": 270,
       "slug": "be-trendy-biser-dlia-vanny-emerald-shine-150-h",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-biser-dlia-vanny-emerald-shine-150-h/",
       "featured_media": 26,
       "title": "Бісер для ванни «Emerald Shine», 150 г"
@@ -538,7 +538,7 @@
     {
       "id": 269,
       "slug": "be-trendy-balzam-dlia-hub-rich-vibes-collection",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/be-trendy-balzam-dlia-hub-rich-vibes-collection/",
       "featured_media": 17,
       "title": "Бальзам для губ | Rich Vibes Collection | 10 мл"
@@ -546,7 +546,7 @@
     {
       "id": 268,
       "slug": "3d-nalipky-be-trendy",
-      "status": "draft",
+      "status": "publish",
       "link": "https://betrendy.online/3d-nalipky-be-trendy/",
       "featured_media": 16,
       "title": "3D-наліпки Be Trendy"
@@ -655,5 +655,11 @@
       "slug": "sprei-dlia-tila",
       "parent": 20
     }
-  ]
+  ],
+  "blog_index": {
+    "id": 343,
+    "slug": "blog",
+    "status": "publish",
+    "link": "https://betrendy.online/blog/"
+  }
 }

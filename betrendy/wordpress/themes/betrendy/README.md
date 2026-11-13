@@ -12,16 +12,16 @@ Native block theme for WordPress 6.6+ and WooCommerce. The importer supplies pag
 
 ## Editable content
 
-All templates and template parts use registered WordPress core blocks. The homepage template renders `core/post-content`, so its banners and sections remain editable in the page editor. No media IDs, menu post IDs or product IDs are hard-coded.
+Templates and template parts use registered WordPress core and WooCommerce blocks. The homepage template renders `core/post-content`, so its banners and sections remain editable in the page editor. No media IDs, menu post IDs or product IDs are hard-coded.
 
-WooCommerce supplies its product, product archive, cart and checkout templates and owns all purchasing behavior. This theme declares WooCommerce support and styles both classic and block product output. It does not implement payment, shipping, stock or order logic.
+The theme supplies editable single-product and product-archive templates using native WooCommerce blocks. WooCommerce supplies cart and checkout behavior and owns all purchasing behavior. This theme declares WooCommerce support and styles both classic and block product output. It does not implement payment, shipping, stock or order logic.
 
 Source appearance: Geologica, white background, dark `#2F3039` text, `#0D28D9` primary blue and `#D41D1D` sale red. Geologica loads from the same Google Fonts family used by the source site, with Arial/Helvetica fallbacks. The layout adapts for narrow screens and supports keyboard focus and reduced-motion preferences.
 
 ## Migration integration
 
 - Information pages and category landing pages must exist at the source paths used by navigation, or the importer must rewrite the navigation links to their new routes.
-- `/ru/` and `/en/` language links need their corresponding imported homepages. Theme text is Ukrainian; translated header/footer template parts or a multilingual plugin are required for full navigation localization.
+- `/ru/` and `/en/` language links are temporarily omitted until their corresponding homepages and localized navigation work. Saved translation data is retained separately. Theme text is Ukrainian; translated header/footer template parts or a multilingual plugin are required for full navigation localization.
 - The free-delivery banner preserves the source site's “Від 1500 грн безкоштовна доставка”. It is display text; the corresponding shipping rule must be configured in WooCommerce before launch.
 - WooCommerce page selection, gateways and shipping need runtime verification on the target installation. No WordPress or WooCommerce runtime is bundled with this theme.
 

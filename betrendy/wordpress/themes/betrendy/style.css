@@ -1,7 +1,7 @@
 /*
 Theme Name: BeTrendy
 Description: Editable BeTrendy block theme for the WordPress and WooCommerce migration.
-Version: 0.1.2
+Version: 0.1.3
 Requires at least: 6.6
 Requires PHP: 7.4
 Author: BeTrendy
@@ -60,6 +60,7 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 .bt-category-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container { align-items: stretch; width: 100%; }
 .bt-category-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item { align-items: flex-start; }
 .bt-main { padding: clamp(24px, 4vw, 56px) clamp(16px, 3vw, 40px); }
+.bt-main .wp-block-column { min-width: 0; }
 .bt-home { padding-inline: clamp(16px, 3vw, 40px); }
 .bt-home > .wp-block-post-content > .alignfull { margin-inline: calc(-1 * clamp(16px, 3vw, 40px)); }
 .bt-banner-slider {
@@ -147,14 +148,24 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 .wc-block-components-product-price ins { color: var(--wp--preset--color--accent); text-decoration: none; }
 
 @media (max-width: 781px) {
-  .bt-utility { justify-content: center; }
-  .bt-brand-row { flex-wrap: wrap; padding-bottom: 16px; }
+  .bt-announcement { padding-block: 7px; }
+  .bt-header .bt-utility { justify-content: center; padding-block: 8px; gap: 8px 16px; }
+  .bt-utility .wp-block-navigation__container { justify-content: center; gap: 6px 14px; }
+  .bt-header .bt-brand-row { flex-wrap: wrap; padding-bottom: 16px; }
   .bt-brand { flex: 1; }
   .bt-brand .wp-block-site-logo img { width: 100px; }
   .bt-product-search { order: 3; flex-basis: 100%; max-width: none; }
+  .bt-category-nav { padding-bottom: 14px; }
+  .bt-category-nav .wp-block-navigation__responsive-container:not(.is-menu-open) { display: none !important; }
+  .bt-category-nav .wp-block-navigation__responsive-container-open { display: flex !important; }
   .bt-footer { margin-top: 40px; padding-top: 32px; }
   .bt-footer .wp-block-columns { gap: 28px; }
   .woocommerce ul.products li.product, .woocommerce-page ul.products li.product { margin-bottom: 28px; }
+}
+@media (max-width: 480px) {
+  .bt-brand-row { gap: 12px; }
+  .bt-cart-link .wp-block-button__link { padding: 10px 14px; }
+  .bt-home-section, .bt-home-story { margin-block: 28px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

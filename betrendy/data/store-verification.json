@@ -1,0 +1,56 @@
+{
+  "checked_at": "2026-11-13T18:52:25+00:00",
+  "site_url": "https://betrendy.online",
+  "currency": "UAH",
+  "coming_soon": "no",
+  "country": "UA",
+  "front_page": 333,
+  "posts_page": 343,
+  "published_products": 61,
+  "draft_products": 0,
+  "gateways": [
+    {
+      "id": "bacs",
+      "title": "Оплата за рахунком після підтвердження"
+    }
+  ],
+  "shipping_zones": [
+    {
+      "id": 1,
+      "name": "Україна — BeTrendy",
+      "methods": [
+        {
+          "id": "betrendy_nova_poshta",
+          "enabled": "yes"
+        }
+      ]
+    }
+  ],
+  "configured_at": "2026-11-13T18:43:52+00:00",
+  "launched_at": "2026-11-13T18:52:12+00:00",
+  "shipping_boundary_tests": [
+    {
+      "subtotal": 1499,
+      "rates": 3,
+      "labels": [
+        "Нова пошта — відділення (тариф перевізника; суму підтвердить менеджер)",
+        "Нова пошта — поштомат (тариф перевізника; суму підтвердить менеджер)",
+        "Нова пошта — кур’єр (тариф перевізника; суму підтвердить менеджер)"
+      ],
+      "passed": true
+    },
+    {
+      "subtotal": 1500,
+      "rates": 3,
+      "labels": [
+        "Нова пошта — відділення (безкоштовно)",
+        "Нова пошта — поштомат (безкоштовно)",
+        "Нова пошта — кур’єр (безкоштовно)"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "command": "verify",
+  "success": true
+}

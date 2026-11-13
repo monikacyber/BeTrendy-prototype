@@ -1,0 +1,2812 @@
+{
+  "checked_at_utc": "2026-11-13T19:01:45Z",
+  "pages_checked": 91,
+  "images_checked": 330,
+  "failed_pages": [],
+  "failed_images": [],
+  "pages": [
+    {
+      "url": "https://betrendy.online/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити жіночу професійну косметику в інтернет магазині Betrendy",
+      "image_count": 29,
+      "blocked": false,
+      "bytes": 188993
+    },
+    {
+      "url": "https://betrendy.online/3d-nalipky-be-trendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити 3D-наліпки Be Trendy 100001 в інтернет магазині Betrendy.space",
+      "image_count": 5,
+      "blocked": false,
+      "bytes": 157234
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-balzam-dlia-hub-rich-vibes-collection/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Бальзам для губ | Rich Vibes Collection | 10 мл 305191 в інтернет магазині Betrendy.space",
+      "image_count": 15,
+      "blocked": false,
+      "bytes": 235607
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-biser-dlia-vanny-emerald-shine-150-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Бісер для ванни «Emerald Shine», 150 г 303258 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 226766
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-biser-dlia-vanny-golden-glow-150-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Бісер для ванни «Golden Glow», 150 г 303265 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 226781
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-biser-dlia-vanny-rich-vibes-collection/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Бісер для ванни | Rich Vibes Collection | 200 г 305245 в інтернет магазині Betrendy.space",
+      "image_count": 13,
+      "blocked": false,
+      "bytes": 236402
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-biser-dlia-vanny-romantis-date-150-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Бісер для ванни «Romantiс Date», 150 г 303272 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 226697
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-biser-dlia-vanny-shining-star-150-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Бісер для ванни «Shining Star», 150 г 303289 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 227406
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-kashemirovyi-krem-dlia-tila-rich-vibes-collection/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Кашеміровий крем для тіла | Rich Vibes Collection | 230 мл 305214 в інтернет магазині Betrendy.space",
+      "image_count": 14,
+      "blocked": false,
+      "bytes": 233805
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-losion-shymer-d-tila-highlighter-golden-glow-spf-25100-ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Лосьйон-шимер для тіла «Highlighter Golden Glow, SPF 25», 100 мл 303647 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 221615
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-losion-shymer-d-tila-highlighter-magic-party-spf-25100-ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Лосьйон-шимер для тіла «Highlighter Magic Party, SPF 25», 100 мл 303654 в інтернет магазині Betrendy.space",
+      "image_count": 9,
+      "blocked": false,
+      "bytes": 224190
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-losion-shymer-d-tila-highlighter-romantic-date-spf-25100-ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Лосьйон-шимер для тіла «Highlighter Romantic Date, SPF 25», 100 мл 303661 в інтернет магазині Betrendy.space",
+      "image_count": 9,
+      "blocked": false,
+      "bytes": 225657
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-losion-shymer-d-tila-highlighter-shining-star-spf-25100-ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Лосьйон-шимер для тіла «Highlighter Shining Star, SPF 25», 100 мл 303678 в інтернет магазині Betrendy.space",
+      "image_count": 9,
+      "blocked": false,
+      "bytes": 225614
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-morska-sil-dlia-vanny-rich-vibes-collection/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Морська сіль для ванни | Rich Vibes Collection | 300 г 305238 в інтернет магазині Betrendy.space",
+      "image_count": 13,
+      "blocked": false,
+      "bytes": 239302
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-mus-pina-dlia-dushu-cotton-mangosteen-430-ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Мус-піна для душу «Cotton & Mangosteen», 430 мл 4820205304262 в інтернет магазині Betrendy.space",
+      "image_count": 14,
+      "blocked": false,
+      "bytes": 234054
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-mus-pina-dlia-dushu-frangipani-acai-430-ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Мус-піна для душу «Frangipani Acai», 430 мл 4820205304279 в інтернет магазині Betrendy.space",
+      "image_count": 14,
+      "blocked": false,
+      "bytes": 233086
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-parfium.-skrab-d-t-bergamot-patchouli-300-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Парфумований скраб для тіла «Bergamot Patchouli», 300 г 304194 в інтернет магазині Betrendy.space",
+      "image_count": 19,
+      "blocked": false,
+      "bytes": 245306
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-parfum-very-rich-rich-vibes-collection/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Парфум «Very Rich» | Rich Vibes Collection | 10 мл 675899 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 225301
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-parfumovana-oliia-dlia-dushu-rich-vibes-collection/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Парфумована олія для душу | Rich Vibes Collection | 250 мл 305207 в інтернет магазині Betrendy.space",
+      "image_count": 12,
+      "blocked": false,
+      "bytes": 237218
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-shymmer-skrab-emerald-shine-sukhyi-200-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шиммер-скраб «Emerald Shine», сухий, 200 г 302831 в інтернет магазині Betrendy.space",
+      "image_count": 9,
+      "blocked": false,
+      "bytes": 220023
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-shymmer-skrab-magic-party-sukhyi-200-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шиммер-скраб «Magic Party», сухий, 200 г 302848 в інтернет магазині Betrendy.space",
+      "image_count": 9,
+      "blocked": false,
+      "bytes": 220572
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-shymmer-skrab-romantic-date-sukhyi-200-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шиммер-скраб «Romantiс Date», сухий, 200 г 302855 в інтернет магазині Betrendy.space",
+      "image_count": 9,
+      "blocked": false,
+      "bytes": 220028
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-shymmer-skrab-shining-star-sukhyi-200-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шиммер-скраб «Shining Star», сухий, 200 г 302862 в інтернет магазині Betrendy.space",
+      "image_count": 9,
+      "blocked": false,
+      "bytes": 219881
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-shymmernyi-skrab-iz-tsinnymy-oliiamy-rich-vibes-collection/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шимерний скраб для тіла із цінними оліями | Rich Vibes Collection | 300 г 305221 в інтернет магазині Betrendy.space",
+      "image_count": 10,
+      "blocked": false,
+      "bytes": 241819
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-emerald-shine100-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шипучий засіб для ванн «Bath bomb «Emerald Shine», 100 г 302749 в інтернет магазині Betrendy.space",
+      "image_count": 10,
+      "blocked": false,
+      "bytes": 221729
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-golden-glow100-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шипучий засіб для ванн «Bath bomb «Golden Glow», 100 г 302763 в інтернет магазині Betrendy.space",
+      "image_count": 12,
+      "blocked": false,
+      "bytes": 224685
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-romantic-date-100-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шипучий засіб для ванн «Bath bomb «Romantic Date», 100 г 302756 в інтернет магазині Betrendy.space",
+      "image_count": 12,
+      "blocked": false,
+      "bytes": 224917
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-shypuchyi-zasib-dlia-vannbath-bomb-shining-star100-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шипучий засіб для ванн «Bath bomb «Shining Star», 100 г 302732 в інтернет магазині Betrendy.space",
+      "image_count": 12,
+      "blocked": false,
+      "bytes": 225009
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-sil-dlia-vanny-emerald-shine-250-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Сіль для ванни «Emerald Shine», 250 г 303326 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 214774
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-sil-dlia-vanny-golden-glow-250-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Сіль для ванни «Golden Glow», 250 г 303319 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 217796
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-sil-dlia-vanny-romantis-date-250-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Сіль для ванни «Romantiс Date», 250 г 303296 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 217550
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-sil-dlia-vanny-shining-star-250-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Сіль для ванни «Shining Star», 250 г 303302 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 219188
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-sprei-shymmer-dlia-tila-golden-glow-155-ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Спрей-шимер для тіла «Golden Glow», 155 мл 302008 в інтернет магазині Betrendy.space",
+      "image_count": 13,
+      "blocked": false,
+      "bytes": 225890
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-sprei-shymmer-dlia-tila-magic-party-155-ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Спрей-шимер для тіла «Magic Party», 155 мл 302022 в інтернет магазині Betrendy.space",
+      "image_count": 13,
+      "blocked": false,
+      "bytes": 226464
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-sprei-shymmer-dlia-tila-romantis-date-155-ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Спрей-шимер для тіла «Romantiс Date», 155 мл 302015 в інтернет магазині Betrendy.space",
+      "image_count": 11,
+      "blocked": false,
+      "bytes": 223577
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-sprei-shymmer-dlia-tila-shining-star-155-ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Спрей-шимер для тіла «Shining Star», 155 мл 302039 в інтернет магазині Betrendy.space",
+      "image_count": 11,
+      "blocked": false,
+      "bytes": 223338
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-zhyvylnyi-krem-t-bergamot-patchouli-230ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Живильний крем для тіла «Bergamot Patchouli», 230 мл 304248 в інтернет магазині Betrendy.space",
+      "image_count": 17,
+      "blocked": false,
+      "bytes": 240344
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-zhyvylnyi-krem-t-jasmine-sandal-230ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Живильний крем для тіла «Jasmine Sandal», 230 мл 304224 в інтернет магазині Betrendy.space",
+      "image_count": 18,
+      "blocked": false,
+      "bytes": 244764
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-zhyvylnyi-krem-t-magnolia-rose-230ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Живильний крем для тіла «Magnolia Rosе», 230 мл 304255 в інтернет магазині Betrendy.space",
+      "image_count": 18,
+      "blocked": false,
+      "bytes": 245087
+    },
+    {
+      "url": "https://betrendy.online/be-trendy-zhyvylnyi-krem-t-marshmallow-vanilla-230-ml/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Живильний крем для тіла «Marshmallow Vanilla», 230 мл 304231 в інтернет магазині Betrendy.space",
+      "image_count": 18,
+      "blocked": false,
+      "bytes": 244984
+    },
+    {
+      "url": "https://betrendy.online/biser-dlia-vann/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Бісер для ванн – BeTrendy",
+      "image_count": 6,
+      "blocked": false,
+      "bytes": 190828
+    },
+    {
+      "url": "https://betrendy.online/blog/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Блог – BeTrendy",
+      "image_count": 3,
+      "blocked": false,
+      "bytes": 93175
+    },
+    {
+      "url": "https://betrendy.online/bombochky-dlia-vann/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Бомбочки для ванн – BeTrendy",
+      "image_count": 5,
+      "blocked": false,
+      "bytes": 175512
+    },
+    {
+      "url": "https://betrendy.online/care-line/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Care Line – BeTrendy",
+      "image_count": 13,
+      "blocked": false,
+      "bytes": 372487
+    },
+    {
+      "url": "https://betrendy.online/cart/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Кошик – BeTrendy",
+      "image_count": 5,
+      "blocked": false,
+      "bytes": 277800
+    },
+    {
+      "url": "https://betrendy.online/checkout/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Кошик – BeTrendy",
+      "image_count": 5,
+      "blocked": false,
+      "bytes": 277800
+    },
+    {
+      "url": "https://betrendy.online/collections/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Колекції – BeTrendy",
+      "image_count": 17,
+      "blocked": false,
+      "bytes": 422061
+    },
+    {
+      "url": "https://betrendy.online/contacts/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Головна Контакти — купити в інтернет магазині Betrendy.space",
+      "image_count": 1,
+      "blocked": false,
+      "bytes": 85917
+    },
+    {
+      "url": "https://betrendy.online/dohliad-ta-zakhyst-2-v-1-z-losonamy-vid-be-trendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Догляд та захист 2 в 1  з лосьонами від  BE TRENDY - Betrendy.space - інтернет-магазин доглядової косметики",
+      "image_count": 2,
+      "blocked": false,
+      "bytes": 93985
+    },
+    {
+      "url": "https://betrendy.online/dohliad-za-tilom/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Догляд за тілом – BeTrendy",
+      "image_count": 12,
+      "blocked": false,
+      "bytes": 334003
+    },
+    {
+      "url": "https://betrendy.online/krem-dlia-tila/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Крем для тіла – BeTrendy",
+      "image_count": 6,
+      "blocked": false,
+      "bytes": 228122
+    },
+    {
+      "url": "https://betrendy.online/losion-z-shymerom/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Лосьйон з шимером для тіла – BeTrendy",
+      "image_count": 5,
+      "blocked": false,
+      "bytes": 179005
+    },
+    {
+      "url": "https://betrendy.online/mus-pina-dlia-dushu/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Мус-піна для душу – BeTrendy",
+      "image_count": 3,
+      "blocked": false,
+      "bytes": 146187
+    },
+    {
+      "url": "https://betrendy.online/my-account/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Мій обліковий запис – BeTrendy",
+      "image_count": 1,
+      "blocked": false,
+      "bytes": 87976
+    },
+    {
+      "url": "https://betrendy.online/obmin-ta-povernennya/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Головна Обмін та повернення — купити в інтернет магазині Betrendy.space",
+      "image_count": 1,
+      "blocked": false,
+      "bytes": 88931
+    },
+    {
+      "url": "https://betrendy.online/oplata-i-dostavka/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Головна Оплата і доставка — купити в інтернет магазині Betrendy.space",
+      "image_count": 1,
+      "blocked": false,
+      "bytes": 88378
+    },
+    {
+      "url": "https://betrendy.online/paket-podarunkovyi-betrendy-silver/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Пакет подарунковий BeTrendy Silver 100002 в інтернет магазині Betrendy.space",
+      "image_count": 5,
+      "blocked": false,
+      "bytes": 157404
+    },
+    {
+      "url": "https://betrendy.online/paket-podarunkovyi-betrendy-white/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Пакет подарунковий BeTrendy White 100003 в інтернет магазині Betrendy.space",
+      "image_count": 5,
+      "blocked": false,
+      "bytes": 157130
+    },
+    {
+      "url": "https://betrendy.online/parfum.-skrab-d-t-jasmine-sandal-300-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Парфумований скраб для тіла «Jasmine Sandal», 300 г 304170\t в інтернет магазині Betrendy.space",
+      "image_count": 18,
+      "blocked": false,
+      "bytes": 240857
+    },
+    {
+      "url": "https://betrendy.online/parfum.-skrab-d-t-magnolia-rose-300-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Парфумований скраб для тіла «Magnolia Rosе», 300 г 304200 в інтернет магазині Betrendy.space",
+      "image_count": 17,
+      "blocked": false,
+      "bytes": 241284
+    },
+    {
+      "url": "https://betrendy.online/parfum.-skrab-d-t-marshmallow-vanilla-300-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Парфумований скраб для тіла «Marshmallow Vanilla», 300 г 304187 в інтернет магазині Betrendy.space",
+      "image_count": 18,
+      "blocked": false,
+      "bytes": 240968
+    },
+    {
+      "url": "https://betrendy.online/parfumovani-mus-piny-dlia-dushu-novynka-vid-be-trendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Новинка! Парфумовані  мус-піни для душу від BE TRENDY - Betrendy.space - інтернет-магазин доглядової косметики",
+      "image_count": 2,
+      "blocked": false,
+      "bytes": 96047
+    },
+    {
+      "url": "https://betrendy.online/podarunkove-pakuvannia-tsukerka/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарункове пакування «Цукерка» 100004 в інтернет магазині Betrendy.space",
+      "image_count": 5,
+      "blocked": false,
+      "bytes": 157890
+    },
+    {
+      "url": "https://betrendy.online/podarunkovi-aksesuary/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Подарункові аксесуари – BeTrendy",
+      "image_count": 5,
+      "blocked": false,
+      "bytes": 137648
+    },
+    {
+      "url": "https://betrendy.online/podarunkovi-nabory/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Подарункові набори – BeTrendy",
+      "image_count": 13,
+      "blocked": false,
+      "bytes": 241787
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-emerald-shine-z-perlynamy-skrabom-i-bombochkoiu-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Emerald Shine з перлинами, скрабом і бомбочкою BeTrendy 200009 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 214923
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-golden-glow-z-perlynamy-skrabom-i-spreiem-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Golden Glow з перлинами, скрабом і спреєм BeTrendy 200007 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 214550
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-jasmine-sandal-z-kremom-i-skrabom-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Jasmine Sandal з кремом і скрабом BeTrendy 200001 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 213955
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-magic-party-zi-skrabom-i-spreiem-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Magic Party зі скрабом і спреєм BeTrendy 200010 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 213992
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-pink-z-bombochkoiu-ta-skrabom-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Pink з бомбочкою та скрабом BeTrendy 200011 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 213864
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-rich-vibes-z-oliieiu-kremom-i-balzamom-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Rich Vibes з олією, кремом і бальзамом BeTrendy 200012 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 215002
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-rich-vibes-z-perlynamy-silliu-ta-oliieiu-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Rich Vibes з перлинами, сіллю та олією BeTrendy 200008 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 214947
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-rich-vibes-zi-skrabom-i-kremom-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Rich Vibes зі скрабом і кремом BeTrendy 200006 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 214132
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-rich-vibes-zi-skrabom-kremom-i-balzamom-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Rich Vibes зі скрабом, кремом і бальзамом BeTrendy 200003 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 215095
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-romantic-date-z-silliu-skrabom-i-spreiem-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Romantic Date з сіллю, скрабом і спреєм BeTrendy 200002 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 214372
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-shining-star-z-bombochkoiu-silliu-ta-losionom-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Shining Star з бомбочкою, сіллю та лосьйоном BeTrendy 200004 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 214638
+    },
+    {
+      "url": "https://betrendy.online/podarunkovyi-nabir-shining-star-z-silliu-skrabom-i-spreiem-betrendy/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Подарунковий набір Shining Star з сіллю, скрабом і спреєм BeTrendy 200005 в інтернет магазині Betrendy.space",
+      "image_count": 7,
+      "blocked": false,
+      "bytes": 214196
+    },
+    {
+      "url": "https://betrendy.online/pro-nas/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Головна Про нас — купити в інтернет магазині Betrendy.space",
+      "image_count": 1,
+      "blocked": false,
+      "bytes": 87748
+    },
+    {
+      "url": "https://betrendy.online/publichna-oferta/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Головна Публічна оферта — купити в інтернет магазині Betrendy.space",
+      "image_count": 1,
+      "blocked": false,
+      "bytes": 114712
+    },
+    {
+      "url": "https://betrendy.online/rich-vibes/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Rich Vibes – BeTrendy",
+      "image_count": 12,
+      "blocked": false,
+      "bytes": 307993
+    },
+    {
+      "url": "https://betrendy.online/shimmer-line/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Shimmer Line – BeTrendy",
+      "image_count": 17,
+      "blocked": false,
+      "bytes": 350684
+    },
+    {
+      "url": "https://betrendy.online/shop/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Каталог – BeTrendy",
+      "image_count": 17,
+      "blocked": false,
+      "bytes": 407295
+    },
+    {
+      "url": "https://betrendy.online/shymmer-skrab-emerald-shine-banka300-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити  Шимер-скраб «Emerald Shine», банка, 300 г 302800 в інтернет магазині Betrendy.space",
+      "image_count": 9,
+      "blocked": false,
+      "bytes": 232926
+    },
+    {
+      "url": "https://betrendy.online/shymmer-skrab-golden-glowbanka300-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шимер-скраб «Golden Glow», банка, 300 г 302824 в інтернет магазині Betrendy.space",
+      "image_count": 9,
+      "blocked": false,
+      "bytes": 233770
+    },
+    {
+      "url": "https://betrendy.online/shymmer-skrab-magic-partybanka300-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шимер-скраб «Magic Party», банка, 300 г 302794 в інтернет магазині Betrendy.space",
+      "image_count": 9,
+      "blocked": false,
+      "bytes": 232662
+    },
+    {
+      "url": "https://betrendy.online/shymmer-skrab-romantic-datebanka300-h/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Купити Шиммер-скраб «Romantic Date», банка, 300 г 302817 в інтернет магазині Betrendy.space",
+      "image_count": 9,
+      "blocked": false,
+      "bytes": 234907
+    },
+    {
+      "url": "https://betrendy.online/skraby-dlia-tila/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Скраби для тіла – BeTrendy",
+      "image_count": 14,
+      "blocked": false,
+      "bytes": 375778
+    },
+    {
+      "url": "https://betrendy.online/soli-dlia-vann/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Солі для ванн – BeTrendy",
+      "image_count": 6,
+      "blocked": false,
+      "bytes": 183151
+    },
+    {
+      "url": "https://betrendy.online/spf/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "SPF – BeTrendy",
+      "image_count": 5,
+      "blocked": false,
+      "bytes": 177873
+    },
+    {
+      "url": "https://betrendy.online/sprei-dlia-tila/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Спрей для тіла – BeTrendy",
+      "image_count": 5,
+      "blocked": false,
+      "bytes": 169249
+    },
+    {
+      "url": "https://betrendy.online/vanna-spa/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Ванна & Спа – BeTrendy",
+      "image_count": 17,
+      "blocked": false,
+      "bytes": 407861
+    }
+  ],
+  "images": [
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/028b10ac7c4d42-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/028b10ac7c4d42-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/02f1f7d336a4c9-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/04d8de69b29d62.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0605131363ffce-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0605131363ffce-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0605131363ffce.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/072ee3584a1b30-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/079a7f48f74429-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/09c3c2982039d3-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0a7c9e35b6f191-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0a7c9e35b6f191-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0b98f59020a896-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0cae086980da2f-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0f0b641147c170-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0f0b641147c170-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0f0b641147c170.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0f8a39f90ae19e.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/0fd75f0a2bc2be-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/11c87e36e47bca-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1256ec1678f28e-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1256ec1678f28e-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1256ec1678f28e-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1263afd0b8a21c-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1263afd0b8a21c-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1263afd0b8a21c.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/140b0cfaeaeb8f-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1748413e71bb9f.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/181750f130b980.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1878d4d6dedeb4-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/187e2e56871033-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1880d8ba24fb42-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1954a291eb2e84-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1a045e4fca8780-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1b2594b7d8568d-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1b2e4ce53ab8a5-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1ebc63f0665381-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1ebc63f0665381.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1f97704c8eb5d8.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/1fd393f82ebf05-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/206e3158eeafce-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/206e3158eeafce-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/206e3158eeafce.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/22016f158fcfb4-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/22016f158fcfb4.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/22cff30426d106-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/2402cb4f179826.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/265434f9f284f5-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/265434f9f284f5-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/265434f9f284f5.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/26768948189116-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/26768948189116.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/29261b54949d6d-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/2d15a3ff005c7d-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/3009e386beee83-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/300b80c511e0cb-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/300ecffe81d165.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/3040aa2d9e79db-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/32f87faf3723b4-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/363aad411eca6c-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/36535f1c0b6764-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/371682fb0531ca-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/371682fb0531ca.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/3adfe8e2976560.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/3bba101ff6f5ab.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/3d284dd10350a4-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/3d5e3e2f7bdf10-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/3d5e3e2f7bdf10-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/3d5e3e2f7bdf10.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/3efdac1cda1b32-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/3f80670a74490f.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/409df5c9d07b2e-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/42ab16dd260c9d.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/42d5dacf1a070f-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/42e3ac9989d1a3-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/42e3ac9989d1a3-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/450e5d7940f6c5.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/47416f09440a18.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/47b5804d5b755a-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/47b682e7149297-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/47b682e7149297-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/480ac893ded5ea-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/48990b3caa4bdf-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4b370d222b93ef-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4b370d222b93ef-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4b370d222b93ef-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4c09eaf1f1e27e-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4c7b4b5bf96eea-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4c7b4b5bf96eea-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4c7b4b5bf96eea-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4c7fcdb242f001-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4d26d2671f32d5.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4dfc7c811d996d-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4ed27393035e52.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4f7fb469a744f9.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/4ffc1ab0539c8e-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/50bd48ff47a372.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/51c1540a3058ef-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/51c1540a3058ef-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/51c1540a3058ef.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/51f29f4cc96b1a-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/532b4980501efa-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/532b4980501efa.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/538294266a6d17-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/55caa9a924786f-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/55caa9a924786f.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/576ce5dbaf3026-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/58ac08a8524bcc-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/5b77cad195e5c8-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/5be6fded4fad88-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/5cc0e2e8a9f52a.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/5d3699d69cad41.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/5e40f01a595611.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/5f4cb72eff0ef3-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/621ffa57a920a0-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/626293f0b432f1-1024x934.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/626293f0b432f1-600x547.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/64adfe5bbbc916-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/666e6766b209de.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6744b7f15f3019.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/67efc51320ed4a.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/68825bcecbdec6.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/68f123c0a30f4f-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/68f123c0a30f4f.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/690dcf00e90632-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/690dcf00e90632.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6bca4198eada4c-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6bcc4471963f51-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6c10a6f1a53d56-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6c10a6f1a53d56.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6c408cd21de661.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6c751ce13b3452-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6dd6411accd82e-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6dd6411accd82e-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6e542885cc1ee0.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6e87f2bb32911a.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6eb12779bef5cc-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/6fb52fbafa561c-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7006d62a31fd67-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/73d980f1971e5d-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/73f176afc60f68-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/74ec3f2a164236-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/754aec2144395a.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7567d1665fe685-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7609f199436a57-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/77a58e355b815f-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7876948c02aed7-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7876948c02aed7-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7876948c02aed7.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/78cb920a8c4b81-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/78cb920a8c4b81.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/78e0869d2ba46a.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/793bb3c0d8931a.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/79f721ad09fb49-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/79f721ad09fb49-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7c4f50dd79cc1f-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7de79099c131dd-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7de79099c131dd.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7df307948e3499-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7df307948e3499.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7e259dff312245-600x750.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7e3be2d09be545-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/7ec1d7f6842e07-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8201679623be5b-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8201679623be5b-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8201679623be5b.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/82136b5a15d519.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/825ff95d3e488a.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/82b66e100c6487-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/82b66e100c6487-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/843f5849cd7638-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/856186b82fd117-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/870179321f9c95-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/87d2291fbf3a79-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/87d2291fbf3a79-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/87d2291fbf3a79.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8833ba3459ece6-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/88b5a1748396ed.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8bc3f039ed50f7-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8c0135c954cfdf-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8ca392e5a3d6cc-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8ca392e5a3d6cc.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8ccbfd2f301ed6-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8cd4e5896eb2fb-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8d18b601d3a6e7.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8dc40882d5f75e-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8dc40882d5f75e-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8dc40882d5f75e-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8e27cc6996ac63.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8e6cfe0872788c.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/8fe27e69724ae6.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/9057c8da41b638.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/935cad04a007ba-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/93a5c375530526.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/93c199def21049.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/93e8bfc32349a5-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/95569958100a11.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/967232a20c777d.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/98f004928143a6-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/99b1fbe383064a-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/9a553cc8763e48.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/9a5af3869fbad6.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/9ab95f4b351a39-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/9ab95f4b351a39.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/9c5ea2c753a421-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/9c77bc1acbb4c9-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/9d1c5a67e12713-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/9d1c5a67e12713-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/9d1c5a67e12713.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a01ac10de3ccd4-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a05af55023c4a7.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a060dc80c1b005-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a12bd9f9969f83.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a1aeac16ef70c9.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a2a30b856f66bf.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a5c40717101236-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a6b117f7e0a2f2-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a6b117f7e0a2f2-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a6b117f7e0a2f2.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a74a99a5aac72d-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a74a99a5aac72d-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/a74a99a5aac72d.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ab15814f462f6e-600x800.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/abb705a31317f5-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ae8c468c8647e3-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/aff56f42bfe189-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b078a42f71de37.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b141ac47545b8f.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b1477cec7a3691-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b18f70f306ce74-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b1999cfa315961-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b1999cfa315961.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b3434c5184f869-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b3434c5184f869.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b4f0f9ea888f73.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b5517250bc2d3b.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b61cff4b48c452.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b69da86b388c7d-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b708517c85222c-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b7ddfc097184de-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/b9039d6cfe1916-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ba01bb1c0ebc72.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/bd66fb8479e2e8-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/bd66fb8479e2e8-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/betrendy-logo.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/bf5604ad0a94d8-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/bf7c7d5d973ef9-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c08268a30a3a5a.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c0a01decfdd2d0-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c33531877e8513-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c39c426ba54213-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c483209242fa5f-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c483209242fa5f.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c645c062549940-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c6e43737ccf25b-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c86a97181c86db-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c86a97181c86db-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c86a97181c86db.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/c8751adf2c5e38.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ca7aadbdbcedb2.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/cbd8834695933b.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/cc1d405b7b7a90.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/cce852c3652836.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/cd6cae30b7b94d.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/cfc7d12dd43eea-600x900.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/cfe302f7d19a80-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d0e5651caa3c23.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d16c515fa05836-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d4afcabdee2823-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d58542e8c73596-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d58542e8c73596.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d58f55fab94b0e-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d6c8d2d9028d4b-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d6c8d2d9028d4b-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d6c8d2d9028d4b.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d717f544fb5cb2-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d8701a04140dd8-176x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d8701a04140dd8.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d9eec1699a6a25-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d9eec1699a6a25-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/d9eec1699a6a25.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/da75a30009ce1e-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ded2e2d08a90c7-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ded2e2d08a90c7-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ded2e2d08a90c7.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/dedccee9242308-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/dedccee9242308.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/def67cabce34c9-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/df21ab69821ff0-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e04066ce26e01f-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e04066ce26e01f-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e0f9c32ddee5f5.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e2025a4a03155e.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e24b91f3683079-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e24b91f3683079-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e24b91f3683079.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e38d5bb452a22b-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e3b82bcd93f415.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e41266865127d5.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e54a3fceef9133.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e703bf620ac297-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e703bf620ac297.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/e9ee18217d13a0.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ea067833bfac43-600x800.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ea373556f6fea3-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/eaf84503ab02bf-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ec0ffa376ed4b7-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ec0ffa376ed4b7.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/f1165db4d36197.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/f4bb097fdbd37a-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/f4bb097fdbd37a-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/f4bb097fdbd37a.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/f4d7559d18aa74-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/f613b10c36fc77.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/f63c9aafcaee0b-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/f751b6a9f7f992-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/f901fdb2104a14-scaled.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/f939789661a7dd.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/fa306d09a1dbb3.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/faaaecf60767ba-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/faaaecf60767ba.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/fae6c8f5731850.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/fdcad4474ae03a-600x751.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/fdffa6e6ac370f-1024x1024.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/fdffa6e6ac370f-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/fdffa6e6ac370f-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/feb70848c66183-600x600.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ff8b57aae3efae-300x300.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ff8b57aae3efae-600x600.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    },
+    {
+      "url": "https://betrendy.online/wp-content/uploads/2026/11/ff8b57aae3efae.png",
+      "status": 200,
+      "content_type": "image/png",
+      "valid": true
+    }
+  ],
+  "internal_links_discovered": 279,
+  "passed": true
+}

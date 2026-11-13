@@ -2,7 +2,7 @@
 /**
  * Plugin Name: BeTrendy Draft Import
  * Description: Imports the approved BeTrendy snapshot into its separate WooCommerce site as drafts, in resumable batches.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Requires PHP: 7.4
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
@@ -13,8 +13,11 @@ final class BeTrendy_Draft_Import {
     const HOOK = 'betrendy_import_batch_v1';
     const TYPE = 'betrendy_import';
     const PAUSE = 'betrendy_import_pause_requested';
+    const ARCHIVE = 'betrendy_media_archive_state_v1';
+    const ARCHIVE_PAUSE = 'betrendy_media_archive_pause_requested';
     private static $data;
     private static $owner = '';
+    private static $active_job = 'main';
 
     public static function boot() {
         add_action( 'init', array( __CLASS__, 'register_status' ) );
@@ -40,7 +43,7 @@ final class BeTrendy_Draft_Import {
         ) );
         register_post_meta( self::TYPE, 'betrendy_import_command', array(
             'type' => 'string', 'single' => true, 'default' => '',
-            'show_in_rest' => array( 'schema' => array( 'type' => 'string', 'enum' => array( '', 'run', 'resume', 'pause', 'verify' ) ) ),
+            'show_in_rest' => array( 'schema' => array( 'type' => 'string', 'enum' => array( '', 'run', 'resume', 'pause', 'verify', 'verify_published', 'archive_media' ) ) ),
             'auth_callback' => static function () { return current_user_can( 'manage_options' ); },
             'sanitize_callback' => 'sanitize_key',
         ) );
@@ -131,14 +134,28 @@ final class BeTrendy_Draft_Import {
     private static function save( $state ) {
         $state['updated_at'] = gmdate( 'c' );
         update_option( self::STATE, $state, false );
+        self::render_status( $state );
+        return $state;
+    }
+
+    private static function render_status( $state ) {
         $id = (int) get_option( 'betrendy_import_status_post', 0 );
         if ( $id && self::TYPE === get_post_type( $id ) ) {
             $summary = $state;
             unset( $summary['term_ids'] );
+            $archive = get_option( self::ARCHIVE, array() );
+            if ( $archive ) { $summary['media_archive'] = $archive; }
             wp_update_post( wp_slash( array( 'ID' => $id, 'post_status' => 'private',
                 'post_content' => '<pre>' . esc_html( wp_json_encode( $summary, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE ) ) . '</pre>' ) ) );
         }
-        return $state;
+    }
+
+    private static function archive_save( $archive ) {
+        $archive['updated_at'] = gmdate( 'c' );
+        update_option( self::ARCHIVE, $archive, false );
+        // The original import STATE is not rewritten by the media-only queue.
+        self::render_status( get_option( self::STATE, array() ) );
+        return $archive;
     }
 
     public static function activate() {
@@ -178,6 +195,8 @@ final class BeTrendy_Draft_Import {
             }
             // Reactivation never silently resumes an error or restarts a completed import.
             if ( in_array( $state['status'], array( 'queued', 'running' ), true ) ) { self::schedule(); }
+            $archive = get_option( self::ARCHIVE, array() );
+            if ( 'complete' === $state['status'] && $archive && in_array( $archive['status'], array( 'queued', 'running' ), true ) ) { self::schedule(); }
         } catch ( Throwable $error ) { wp_die( esc_html( $error->getMessage() ) ); }
     }
 
@@ -191,22 +210,27 @@ final class BeTrendy_Draft_Import {
         if ( ! current_user_can( 'manage_options' ) || $post->ID !== (int) get_option( 'betrendy_import_status_post' ) ) { return; }
         $meta = $request->get_param( 'meta' );
         $command = is_array( $meta ) && isset( $meta['betrendy_import_command'] ) ? $meta['betrendy_import_command'] : '';
-        if ( ! in_array( $command, array( 'pause', 'resume', 'run', 'verify' ), true ) ) { return; }
+        if ( ! in_array( $command, array( 'pause', 'resume', 'run', 'verify', 'verify_published', 'archive_media' ), true ) ) { return; }
         update_post_meta( $post->ID, 'betrendy_import_command', '' );
         $state = get_option( self::STATE, array() );
-        if ( 'verify' === $command ) {
+        if ( in_array( $command, array( 'verify', 'verify_published' ), true ) ) {
             // Verification changes only the private status report; it never imports or repairs content.
             if ( empty( $state ) || 'complete' !== $state['status'] ) { return; }
+            $key = 'verify_published' === $command ? 'verification_published' : 'verification';
             try {
                 self::environment();
-                $state['verification'] = self::verify( self::data(), $state );
+                $state[ $key ] = self::verify( self::data(), $state, 'verify_published' === $command ? 'publish' : 'draft' );
             } catch ( Throwable $error ) {
-                $state['verification'] = array( 'passed' => false, 'checked_at' => gmdate( 'c' ),
+                $state[ $key ] = array( 'passed' => false, 'checked_at' => gmdate( 'c' ),
                     'counts' => array(), 'mismatches' => array( array( 'check' => 'verification', 'message' => $error->getMessage() ) ) );
             }
             self::save( $state ); return;
         }
+        if ( $state && 'complete' === $state['status'] ) {
+            self::archive_command( $command ); return;
+        }
         if ( empty( $state ) || 'complete' === $state['status'] ) { return; }
+        if ( 'archive_media' === $command ) { return; } // Finish the original import first.
         if ( 'pause' === $command ) {
             update_option( self::PAUSE, true, false );
             if ( ! get_option( self::LOCK ) ) {
@@ -234,14 +258,19 @@ final class BeTrendy_Draft_Import {
         $lock = get_option( self::LOCK );
         if ( is_array( $lock ) && $lock['owner'] === self::$owner ) { delete_option( self::LOCK ); }
         self::$owner = '';
+        self::$active_job = 'main';
     }
 
     public static function fatal_checkpoint() {
         if ( ! self::$owner ) { return; }
         $last = error_get_last();
         if ( $last && in_array( $last['type'], array( E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR ), true ) ) {
-            $state = get_option( self::STATE, array() );
-            if ( $state ) { $state['status'] = 'paused'; $state['error'] = 'PHP stopped the batch. Inspect the server log, then resume; completed items remain saved.'; self::save( $state ); }
+            $option = 'archive' === self::$active_job ? self::ARCHIVE : self::STATE;
+            $state = get_option( $option, array() );
+            if ( $state ) {
+                $state['status'] = 'paused'; $state['error'] = 'PHP stopped the batch. Inspect the server log, then resume; completed items remain saved.';
+                if ( 'archive' === self::$active_job ) { self::archive_save( $state ); } else { self::save( $state ); }
+            }
             wp_clear_scheduled_hook( self::HOOK );
         }
         self::unlock();
@@ -249,6 +278,7 @@ final class BeTrendy_Draft_Import {
 
     public static function tick() {
         $state = get_option( self::STATE, array() );
+        if ( $state && 'complete' === $state['status'] ) { self::archive_tick(); return; }
         if ( ! $state || ! in_array( $state['status'], array( 'queued', 'running' ), true ) || ! self::lock() ) { return; }
         register_shutdown_function( array( __CLASS__, 'fatal_checkpoint' ) );
         try {
@@ -271,6 +301,80 @@ final class BeTrendy_Draft_Import {
             $state = get_option( self::STATE, $state );
             $state['status'] = 'paused'; $state['error'] = $error->getMessage();
             self::save( $state ); wp_clear_scheduled_hook( self::HOOK );
+        } finally { self::unlock(); }
+    }
+
+    private static function archive_command( $command ) {
+        $archive = get_option( self::ARCHIVE, array() );
+        if ( 'archive_media' === $command ) {
+            try {
+                self::environment(); $data = self::data();
+                if ( ! $archive || ( empty( $archive['manifest_sha256'] ) && 0 === (int) ( $archive['index'] ?? 0 ) && 0 === (int) ( $archive['created'] ?? 0 ) ) ) {
+                    $archive = array( 'status' => 'queued', 'index' => 0, 'total' => count( $data['media-manifest'] ),
+                        'created' => 0, 'reused' => 0, 'sha256_verified' => 0, 'error' => '', 'started_at' => gmdate( 'c' ),
+                        'manifest_sha256' => hash( 'sha256', wp_json_encode( $data['media-manifest'] ) ) );
+                    self::archive_save( $archive );
+                }
+            } catch ( Throwable $error ) {
+                // Keep any prior checkpoint; this error affects only the private archive report.
+                $archive = $archive ?: array( 'index' => 0, 'total' => 0, 'created' => 0, 'reused' => 0, 'sha256_verified' => 0 );
+                $archive['status'] = 'paused'; $archive['error'] = $error->getMessage(); self::archive_save( $archive ); return;
+            }
+            $command = 'resume';
+        }
+        if ( ! $archive || 'complete' === $archive['status'] ) { self::render_status( get_option( self::STATE, array() ) ); return; }
+        if ( 'pause' === $command ) {
+            update_option( self::ARCHIVE_PAUSE, true, false );
+            if ( ! get_option( self::LOCK ) ) { $archive['status'] = 'paused'; $archive['error'] = 'Paused by administrator.'; self::archive_save( $archive ); }
+            wp_clear_scheduled_hook( self::HOOK ); return;
+        }
+        if ( 'resume' === $command ) {
+            delete_option( self::ARCHIVE_PAUSE );
+            if ( get_option( self::LOCK ) ) { return; }
+            $archive['status'] = 'queued'; $archive['error'] = ''; self::archive_save( $archive ); self::schedule();
+        }
+        if ( in_array( $command, array( 'run', 'resume' ), true ) ) { self::archive_tick(); }
+    }
+
+    private static function archive_tick() {
+        $archive = get_option( self::ARCHIVE, array() );
+        if ( ! $archive || ! in_array( $archive['status'], array( 'queued', 'running' ), true ) || ! self::lock() ) { return; }
+        self::$active_job = 'archive';
+        register_shutdown_function( array( __CLASS__, 'fatal_checkpoint' ) );
+        try {
+            self::environment(); $data = self::data();
+            $digest = hash( 'sha256', wp_json_encode( $data['media-manifest'] ) );
+            if ( empty( $archive['manifest_sha256'] ) || ! hash_equals( $archive['manifest_sha256'], $digest ) ) {
+                throw new RuntimeException( 'The media manifest changed; the existing archive checkpoint was not reset.' );
+            }
+            $archive['status'] = 'running'; $archive['error'] = ''; self::archive_save( $archive );
+            $start = microtime( true ); $new_files = 0;
+            // At most four downloads, 24 records (including reused files), or 12 seconds per batch.
+            for ( $n = 0; $n < 24 && $new_files < 4 && microtime( true ) - $start < 12; ++$n ) {
+                if ( get_option( self::ARCHIVE_PAUSE ) ) {
+                    $archive['status'] = 'paused'; $archive['error'] = 'Paused by administrator.'; self::archive_save( $archive );
+                    wp_clear_scheduled_hook( self::HOOK ); break;
+                }
+                $index = (int) $archive['index'];
+                if ( ! isset( $data['media-manifest'][ $index ] ) ) {
+                    $archive['status'] = 'complete'; $archive['completed_at'] = gmdate( 'c' ); self::archive_save( $archive );
+                    wp_clear_scheduled_hook( self::HOOK ); break;
+                }
+                $item = $data['media-manifest'][ $index ];
+                $created = self::import_media( $item['url'], 'BeTrendy', $data );
+                $id = self::attachment_id( $item['url'] );
+                $original = $id ? wp_get_original_image_path( $id ) : false;
+                if ( ! $original || ! is_file( $original ) || ! hash_equals( $item['sha256'], hash_file( 'sha256', $original ) ) ) {
+                    throw new RuntimeException( 'Original attachment checksum mismatch or missing file: ' . basename( $item['path'] ) . '. Existing media were not replaced.' );
+                }
+                update_post_meta( $id, '_betrendy_source_sha256', $item['sha256'] );
+                if ( $created ) { ++$archive['created']; ++$new_files; } else { ++$archive['reused']; }
+                ++$archive['sha256_verified']; ++$archive['index']; self::archive_save( $archive );
+            }
+            if ( 'running' === $archive['status'] ) { self::schedule(); }
+        } catch ( Throwable $error ) {
+            $archive = get_option( self::ARCHIVE, $archive ); $archive['status'] = 'paused'; $archive['error'] = $error->getMessage();
+            self::archive_save( $archive ); wp_clear_scheduled_hook( self::HOOK );
         } finally { self::unlock(); }
     }
 
@@ -375,7 +479,7 @@ final class BeTrendy_Draft_Import {
         return '' === (string) $price ? '' : wc_format_decimal( (string) $price, false, true );
     }
 
-    private static function verify( $data, $state ) {
+    private static function verify( $data, $state, $expected_status = 'draft' ) {
         $report = array( 'passed' => false, 'checked_at' => gmdate( 'c' ), 'counts' => array(
             'products_expected' => count( $data['products_uk'] ), 'products_found' => 0,
             'pages_posts_expected' => count( $data['pages_uk'] ), 'pages_posts_found' => 0,
@@ -404,7 +508,7 @@ final class BeTrendy_Draft_Import {
             $actual_categories = array_map( 'intval', $product->get_category_ids( 'edit' ) );
             sort( $expected_categories ); sort( $actual_categories );
             $fields = array(
-                'status' => array( 'draft', $product->get_status( 'edit' ) ),
+                'status' => array( $expected_status, $product->get_status( 'edit' ) ),
                 'source_url_matches' => array( true, get_post_meta( $id, '_betrendy_source_url', true ) === $row['source_url'] ),
                 'regular_price' => array( self::normalized_price( $row['regular_price'] ), self::normalized_price( $product->get_regular_price( 'edit' ) ) ),
                 'sale_price' => array( self::normalized_price( $row['sale_price'] ), self::normalized_price( $product->get_sale_price( 'edit' ) ) ),
@@ -422,7 +526,7 @@ final class BeTrendy_Draft_Import {
                 'meta_key' => '_betrendy_source_url', 'meta_value' => $row['source_url'] ) );
             if ( count( $ids ) !== 1 ) { $report['mismatches'][] = array( 'check' => 'page_post', 'slug' => $row['slug'], 'field' => 'matching_records', 'expected' => 1, 'actual' => count( $ids ) ); continue; }
             ++$report['counts']['pages_posts_found']; $post = get_post( $ids[0] );
-            $fields = array( 'status' => array( 'draft', $post->post_status ), 'post_type' => array( $row['type'], $post->post_type ),
+            $fields = array( 'status' => array( $expected_status, $post->post_status ), 'post_type' => array( $row['type'], $post->post_type ),
                 'native_block_counts' => array( self::block_counts( $row['content_blocks'] ), self::block_counts( $post->post_content ) ) );
             foreach ( $fields as $field => $values ) {
                 if ( $values[0] !== $values[1] ) { $report['mismatches'][] = array( 'check' => 'page_post', 'slug' => $row['slug'], 'field' => $field, 'expected' => $values[0], 'actual' => $values[1] ); }

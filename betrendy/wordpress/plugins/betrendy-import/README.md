@@ -34,11 +34,26 @@ Update that record's registered REST meta `betrendy_import_command`:
 - `resume`: clear the pause and attempt one batch from the saved checkpoint.
 - `verify`: after completion, compare real products, prices, images, categories and
   page block counts with the snapshot. Updates only the private verification report.
+- `verify_published`: the same read-only comparison, expecting published products
+  and pages/posts. Its report is saved separately as `verification_published`.
+- `archive_media`: after the original import completes, start or resume a separate
+  queue for **all 389 manifest images**. Existing attachments are reused, and their
+  original files are checked against SHA-256; no products or pages are changed.
+  `run` continues this queue, and `pause` / `resume` control it while the original
+  import remains complete. The private `media_archive` report records progress,
+  created/reused files and verified checksums. Each batch downloads at most four
+  files and examines at most 24 records within a 12-second budget between files.
 
 Only an administrator can issue these commands; they affect only the unique status
 record created by this plugin. A completed job cannot be restarted by these commands.
 Each media attachment and imported record is checkpointed, so retries reuse their
 source identifiers. A fatal PHP error pauses the job; inspect server logs and resume.
+
+The archive queue has its own persisted checkpoint and never resets the original
+import STATE, attachment mapping or completed content. A changed manifest or
+missing/changed original attachment pauses the archive instead of replacing files.
+The normal verification commands check the 246 images referenced by Ukrainian
+content; the separate archive report covers all 389 original files.
 
 The importer does not publish content, configure checkout, payment gateways,
 multilingual display, DNS or the front page. Review and configure these separately.

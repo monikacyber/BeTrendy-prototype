@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-13T18:52:45+00:00",
+  "counts": {
+    "products_expected": 61,
+    "products_found": 61,
+    "pages_posts_expected": 8,
+    "pages_posts_found": 8,
+    "media_expected": 246,
+    "media_valid": 246,
+    "mismatches": 0
+  },
+  "mismatches": []
+}
