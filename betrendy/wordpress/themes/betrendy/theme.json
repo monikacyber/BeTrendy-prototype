@@ -21,6 +21,21 @@
       "defaultPalette": false,
       "palette": [
         {
+          "slug": "blush",
+          "color": "#F2E3DE",
+          "name": "BeTrendy Blush"
+        },
+        {
+          "slug": "paper",
+          "color": "#FAF8F5",
+          "name": "Warm Paper"
+        },
+        {
+          "slug": "forest",
+          "color": "#0B473F",
+          "name": "Rich Vibes Green"
+        },
+        {
           "slug": "primary",
           "color": "#0D28D9",
           "name": "BeTrendy Blue"

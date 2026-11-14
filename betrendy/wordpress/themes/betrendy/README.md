@@ -27,6 +27,14 @@ Source appearance: Geologica, white background, dark `#2F3039` text, `#0D28D9` p
 
 Source reviewed on 2026-11-13: https://betrendy.space/.
 
+## Version 0.2.2 — 2026-11-14
+
+The compact shared header uses native core navigation, a details/search popover and a cart link. Its mobile row is 64px plus the delivery announcement. `assets/header.js` focuses the search field and dismisses search on Escape, outside clicks or leaving focus; the native details element remains usable without JavaScript.
+
+The new homepage has an original model photograph, editable heading and CTA, three original collection photographs, four existing WooCommerce products, the preserved promotions carousel and original brand copy. Mobile collection cards use native horizontal scrolling with the next card visible. `assets/editorial.css` scopes homepage styling to `.bt-home-v2` and header styling to `.bt-compact-header`; About-page content is unchanged. Additional palette tokens are blush `#F2E3DE`, paper `#FAF8F5` and forest `#0B473F`.
+
+Both `front-page.html` and `home-preview.html` render the page content in an unconstrained wrapper, because WordPress gives the front-page template precedence at the site root. Keep them aligned when changing the homepage wrapper. The current page content is `../../content/home.html`; live attachment IDs and SKUs must be remapped when rebuilding on a different site. Runtime verification is documented in `../../../data/home-redesign-2026-11-14.json`.
+
 ## Version 0.1.4 — 2026-11-14
 
 The homepage carousel progressively enhances the existing editable image blocks with previous/next controls, labelled pagination and a slide counter. It supports native touch scrolling, arrow/Home/End keys, reduced motion and inert inactive slides; it does not autoplay. If JavaScript fails, the original horizontal image links remain available. The script loads only on the front page. Image attachment IDs let WordPress emit intrinsic dimensions and responsive sources.

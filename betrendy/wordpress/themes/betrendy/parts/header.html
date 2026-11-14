@@ -1,55 +1,38 @@
-<!-- wp:group {"className":"bt-header","layout":{"type":"default"}} -->
-<div class="wp-block-group bt-header">
-<!-- wp:group {"className":"bt-announcement","backgroundColor":"soft","layout":{"type":"constrained"}} -->
-<div class="wp-block-group bt-announcement has-soft-background-color has-background"><!-- wp:paragraph {"align":"center","fontSize":"small"} --><p class="has-text-align-center has-small-font-size">Від 1500 грн безкоштовна доставка</p><!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-<!-- wp:group {"className":"bt-header-inner","layout":{"type":"constrained","contentSize":"1440px"}} -->
-<div class="wp-block-group bt-header-inner">
-<!-- wp:group {"className":"bt-utility","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group bt-utility">
-<!-- wp:navigation {"overlayMenu":"never","ariaLabel":"Інформація для покупців","layout":{"type":"flex","flexWrap":"wrap"}} -->
-<!-- wp:navigation-link {"label":"Про нас","url":"/pro-nas/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Оплата і доставка","url":"/oplata-i-dostavka/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Обмін та повернення","url":"/obmin-ta-povernennya/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Контакти","url":"/contacts/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Блог","url":"/blog/","kind":"custom"} /-->
-<!-- /wp:navigation -->
-<!-- wp:navigation {"overlayMenu":"never","ariaLabel":"Мова, Instagram та кабінет","layout":{"type":"flex","flexWrap":"wrap"}} -->
-<!-- wp:navigation-link {"label":"Укр","url":"/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Instagram","url":"https://www.instagram.com/be.trendy.ua/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Кабінет","url":"/my-account/","kind":"custom"} /-->
-<!-- /wp:navigation -->
-</div><!-- /wp:group -->
-<!-- wp:group {"className":"bt-brand-row","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group bt-brand-row">
-<!-- wp:group {"className":"bt-brand","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group bt-brand"><!-- wp:site-logo {"width":130,"shouldSyncIcon":false} /--><!-- wp:site-title {"level":0} /--></div><!-- /wp:group -->
-<!-- wp:search {"label":"Пошук товарів","showLabel":false,"placeholder":"Пошук товарів","buttonText":"Знайти","buttonPosition":"button-inside","buttonUseIcon":true,"query":{"post_type":"product"},"className":"bt-product-search"} /-->
-<!-- wp:buttons {"className":"bt-cart-link","layout":{"type":"flex","justifyContent":"right"}} -->
-<div class="wp-block-buttons bt-cart-link"><!-- wp:button {"className":"is-style-outline"} --><div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/cart/">Мій кошик</a></div><!-- /wp:button --></div><!-- /wp:buttons -->
-</div><!-- /wp:group -->
-<!-- wp:navigation {"overlayMenu":"mobile","ariaLabel":"Каталог","openSubmenusOnClick":true,"className":"bt-category-nav","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
-<!-- wp:navigation-submenu {"label":"Догляд за тілом","url":"/dohliad-za-tilom/","kind":"custom"} -->
-<!-- wp:navigation-link {"label":"Спрей для тіла","url":"/sprei-dlia-tila/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Крем для тіла","url":"/krem-dlia-tila/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Мус-піна для душу","url":"/mus-pina-dlia-dushu/","kind":"custom"} /-->
-<!-- /wp:navigation-submenu -->
-<!-- wp:navigation-submenu {"label":"Колекції","url":"/collections/","kind":"custom"} -->
-<!-- wp:navigation-link {"label":"Rich Vibes","url":"/rich-vibes/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Care Line","url":"/care-line/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Shimmer Line","url":"/shimmer-line/","kind":"custom"} /-->
-<!-- /wp:navigation-submenu -->
-<!-- wp:navigation-submenu {"label":"Ванна & Спа","url":"/vanna-spa/","kind":"custom"} -->
-<!-- wp:navigation-link {"label":"Бомбочки для ванн","url":"/bombochky-dlia-vann/","kind":"custom"} /-->
+<!-- wp:group {"className":"bt-compact-header","layout":{"type":"default"}} -->
+<div class="wp-block-group bt-compact-header"><!-- wp:group {"className":"bt-compact-announcement","backgroundColor":"ink","textColor":"base","layout":{"type":"default"}} -->
+<div class="wp-block-group bt-compact-announcement has-base-color has-ink-background-color has-text-color has-background"><!-- wp:paragraph -->
+<p>Від 1500 грн — безкоштовна доставка</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --><!-- wp:group {"className":"bt-compact-row","layout":{"type":"default"}} -->
+<div class="wp-block-group bt-compact-row"><!-- wp:group {"className":"bt-brand bt-compact-brand","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group bt-brand bt-compact-brand"><!-- wp:site-logo {"width":130,"shouldSyncIcon":false} /--><!-- wp:site-title {"level":0} /--></div>
+<!-- /wp:group --><!-- wp:navigation {"overlayMenu":"mobile","ariaLabel":"Головне меню","openSubmenusOnClick":true,"className":"bt-compact-nav","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<!-- wp:navigation-submenu {"label":"Каталог","url":"/dohliad-za-tilom/","kind":"custom"} -->
+<!-- wp:navigation-link {"label":"Увесь догляд","url":"/dohliad-za-tilom/","kind":"custom"} /-->
+<!-- wp:navigation-link {"label":"Спреї для тіла","url":"/sprei-dlia-tila/","kind":"custom"} /-->
+<!-- wp:navigation-link {"label":"Креми для тіла","url":"/krem-dlia-tila/","kind":"custom"} /-->
+<!-- wp:navigation-link {"label":"Мус-піни для душу","url":"/mus-pina-dlia-dushu/","kind":"custom"} /-->
 <!-- wp:navigation-link {"label":"Скраби для тіла","url":"/skraby-dlia-tila/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Солі для ванн","url":"/soli-dlia-vann/","kind":"custom"} /-->
-<!-- wp:navigation-link {"label":"Бісер для ванн","url":"/biser-dlia-vann/","kind":"custom"} /-->
-<!-- /wp:navigation-submenu -->
-<!-- wp:navigation-submenu {"label":"SPF","url":"/spf/","kind":"custom"} -->
-<!-- wp:navigation-link {"label":"Лосьйон з шимером для тіла","url":"/losion-z-shymerom/","kind":"custom"} /-->
-<!-- /wp:navigation-submenu -->
+<!-- wp:navigation-link {"label":"Ванна та спа","url":"/vanna-spa/","kind":"custom"} /-->
+<!-- wp:navigation-link {"label":"SPF","url":"/spf/","kind":"custom"} /-->
+<!-- /wp:navigation-submenu --><!-- wp:navigation-submenu {"label":"Колекції","url":"/collections/","kind":"custom"} -->
+<!-- wp:navigation-link {"label":"Rich Vibes","url":"/rich-vibes/","kind":"custom"} /-->
+<!-- wp:navigation-link {"label":"Shimmer Line","url":"/shimmer-line/","kind":"custom"} /-->
+<!-- wp:navigation-link {"label":"Care Line","url":"/care-line/","kind":"custom"} /-->
+<!-- /wp:navigation-submenu --><!-- wp:navigation-submenu {"label":"Подарунки","url":"/podarunkovi-nabory/","kind":"custom"} -->
 <!-- wp:navigation-link {"label":"Подарункові набори","url":"/podarunkovi-nabory/","kind":"custom"} /-->
 <!-- wp:navigation-link {"label":"Подарункові аксесуари","url":"/podarunkovi-aksesuary/","kind":"custom"} /-->
-<!-- /wp:navigation -->
-</div><!-- /wp:group -->
-</div><!-- /wp:group -->
+<!-- /wp:navigation-submenu --><!-- wp:navigation-link {"label":"Про нас","url":"/pro-nas/","kind":"custom"} /--><!-- wp:navigation-link {"label":"Оплата і доставка","url":"/oplata-i-dostavka/","kind":"custom","className":"bt-nav-mobile-only"} /-->
+<!-- wp:navigation-link {"label":"Контакти","url":"/contacts/","kind":"custom","className":"bt-nav-mobile-only"} /-->
+<!-- wp:navigation-link {"label":"Кабінет","url":"/my-account/","kind":"custom","className":"bt-nav-mobile-only"} /-->
+<!-- /wp:navigation --><!-- wp:group {"className":"bt-compact-actions","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group bt-compact-actions"><!-- wp:details {"className":"bt-compact-search"} -->
+<details class="wp-block-details bt-compact-search"><summary>Пошук</summary><!-- wp:search {"label":"Пошук товарів","showLabel":false,"placeholder":"Що шукаємо?","buttonText":"Знайти","buttonPosition":"button-inside","buttonUseIcon":true,"query":{"post_type":"product"},"className":"bt-header-search-form"} /--></details>
+<!-- /wp:details --><!-- wp:buttons {"className":"bt-compact-cart"} -->
+<div class="wp-block-buttons bt-compact-cart"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/cart/">Кошик</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

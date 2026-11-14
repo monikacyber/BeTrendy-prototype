@@ -21,6 +21,8 @@ add_action( 'after_setup_theme', function () {
 
 add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'betrendy-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
+    wp_enqueue_style( 'betrendy-editorial', get_theme_file_uri( 'assets/editorial.css' ), array( 'betrendy-style' ), wp_get_theme()->get( 'Version' ) );
+    wp_enqueue_script( 'betrendy-header', get_theme_file_uri( 'assets/header.js' ), array(), wp_get_theme()->get( 'Version' ), true );
     if ( is_front_page() ) {
         wp_enqueue_script( 'betrendy-carousel', get_theme_file_uri( 'assets/carousel.js' ), array(), wp_get_theme()->get( 'Version' ), true );
     }

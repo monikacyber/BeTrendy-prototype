@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-14",
+  "site": "https://betrendy.online/",
+  "theme_version": "0.2.2",
+  "page": {
+    "id": 333,
+    "content_file": "wordpress/content/home.html",
+    "modified_utc": "2026-11-14T14:04:10"
+  },
+  "changes": [
+    "Compact shared header with native navigation, product search and cart link",
+    "Original model photograph with an editable heading, primary CTA and collection anchor",
+    "Three linked original collection photographs: Rich Vibes, Shimmer Line and Care Line",
+    "Native horizontally scrollable collection cards on narrow screens, with the next card visible",
+    "Four existing WooCommerce products with live prices and add-to-cart controls",
+    "Original three-slide promotions carousel retained below products",
+    "Original brand copy retained in the final homepage section",
+    "Both front-page and home-preview templates use the new homepage wrapper"
+  ],
+  "media": [
+    {
+      "attachment_id": 265,
+      "role": "hero",
+      "file": "ba01bb1c0ebc72.png"
+    },
+    {
+      "attachment_id": 95,
+      "role": "Rich Vibes collection, CSS crop",
+      "file": "7e259dff312245.jpg"
+    },
+    {
+      "attachment_id": 159,
+      "role": "Shimmer Line collection",
+      "file": "140b0cfaeaeb8f-scaled.jpg"
+    },
+    {
+      "attachment_id": 264,
+      "role": "Care Line collection",
+      "file": "82136b5a15d519.png"
+    }
+  ],
+  "verification": {
+    "serialized_core_blocks": "passed",
+    "php_and_javascript_syntax": "passed",
+    "published_home_content_exact_readback": true,
+    "published_editorial_css_exact_readback": true,
+    "home_h1_count": 1,
+    "collection_count": 3,
+    "featured_product_count": 4,
+    "preserved_banner_count": 3,
+    "hero_loading": "fetchpriority=high; intrinsic width and height; responsive srcset",
+    "links_and_images": {
+      "urls_checked": 32,
+      "http_200": 32,
+      "failures": 0
+    },
+    "screenshots_visually_reviewed_widths_px": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "safari_interactions": [
+      "Collections menu expands and lists the three collection links",
+      "Rich Vibes link opens the collection and its products",
+      "Search expands and submits Rich as a product search; 11 results shown",
+      "Header cart link opens the empty guest cart"
+    ],
+    "about_content_unchanged": {
+      "id": 338,
+      "modified_utc": "2026-11-14T13:44:33"
+    },
+    "hostinger_cache_purged": true,
+    "limitations": [
+      "Mobile layout checked with rendered screenshots; physical touch gestures and mobile navigation interaction were not tested",
+      "No real order, payment or customer email was submitted"
+    ]
+  },
+  "public_archive": "Only the sanitized export is saved to GitHub; payment details remain excluded."
+}
