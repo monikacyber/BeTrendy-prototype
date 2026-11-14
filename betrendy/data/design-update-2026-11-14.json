@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-14",
+  "site": "https://betrendy.online/",
+  "theme_version": "0.1.4",
+  "pages": [
+    {
+      "id": 333,
+      "url": "https://betrendy.online/",
+      "content_file": "wordpress/content/home.html"
+    },
+    {
+      "id": 338,
+      "url": "https://betrendy.online/pro-nas/",
+      "content_file": "wordpress/content/about.html"
+    }
+  ],
+  "changes": [
+    "Progressive carousel controls, pagination, counter, keyboard support and reduced motion",
+    "Verified media attachment IDs and descriptive alternative text for the three home banners",
+    "About page composed from editable core blocks, existing brand copy and original media",
+    "Direct links from the About page to body care, Rich Vibes, Shimmer Line, Care Line and gift sets"
+  ],
+  "verification": {
+    "php_and_javascript_syntax": "passed",
+    "serialized_blocks_and_media_id_consistency": "passed",
+    "published_content_exact_readback": "passed",
+    "published_carousel_script_exact_match": "passed",
+    "links_and_media_http_checks": {
+      "urls": 11,
+      "successful_http_200": 11,
+      "nonempty_images": 4
+    },
+    "safari_interactions": [
+      "next to slide 2",
+      "pagination to slide 3",
+      "next wraps to slide 1",
+      "previous wraps to slide 3",
+      "About page opens from navigation"
+    ],
+    "screenshots_visually_reviewed": [
+      "homepage at 390px",
+      "About at 390px",
+      "About at 1440px",
+      "native Safari homepage slide 3 and About hero"
+    ],
+    "hostinger_cache_purged": true,
+    "limitations": [
+      "Touch gestures and keyboard shortcuts were not directly tested on a physical phone or through keyboard navigation",
+      "The cause of the earlier temporary banner disappearance was not reproduced or established"
+    ]
+  }
+}

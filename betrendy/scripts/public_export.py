@@ -69,7 +69,11 @@ def candidate_files():
         if not path.is_file():
             continue
         rel = path.relative_to(ROOT)
-        if any(part in OMIT_DIRS for part in rel.parts):
+        omitted_parts = set(rel.parts).intersection(OMIT_DIRS)
+        # Theme JS/CSS is source code; the large archived product assets remain excluded.
+        if Path('betrendy/wordpress/themes/betrendy/assets') in rel.parents:
+            omitted_parts.discard('assets')
+        if omitted_parts:
             continue
         if GENERATED_PAYLOAD == rel.parent or GENERATED_PAYLOAD in rel.parents:
             continue

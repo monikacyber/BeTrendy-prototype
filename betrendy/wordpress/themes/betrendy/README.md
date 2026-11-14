@@ -26,3 +26,9 @@ Source appearance: Geologica, white background, dark `#2F3039` text, `#0D28D9` p
 - WooCommerce page selection, gateways and shipping need runtime verification on the target installation. No WordPress or WooCommerce runtime is bundled with this theme.
 
 Source reviewed on 2026-11-13: https://betrendy.space/.
+
+## Version 0.1.4 — 2026-11-14
+
+The homepage carousel progressively enhances the existing editable image blocks with previous/next controls, labelled pagination and a slide counter. It supports native touch scrolling, arrow/Home/End keys, reduced motion and inert inactive slides; it does not autoplay. If JavaScript fails, the original horizontal image links remain available. The script loads only on the front page. Image attachment IDs let WordPress emit intrinsic dimensions and responsive sources.
+
+About-page styling is scoped to `.bt-about`. Its updated core-block content and the current homepage are in `../../content/about.html` and `../../content/home.html`; restore these over the historical import content when rebuilding the site. Attachment IDs in these live snapshots belong to betrendy.online and must be remapped for another installation.

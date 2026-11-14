@@ -1,7 +1,7 @@
 /*
 Theme Name: BeTrendy
 Description: Editable BeTrendy block theme for the WordPress and WooCommerce migration.
-Version: 0.1.3
+Version: 0.1.4
 Requires at least: 6.6
 Requires PHP: 7.4
 Author: BeTrendy
@@ -79,6 +79,46 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
   scroll-snap-align: start;
 }
 .bt-banner-slider > .wp-block-image img { display: block; width: 100%; }
+.bt-banner-slider > .wp-block-image + .wp-block-image { margin-block-start: 0; }
+.bt-carousel { margin-block-start: 0 !important; }
+.bt-carousel .bt-banner-slider { margin: 0; scrollbar-width: none; overscroll-behavior-x: contain; }
+.bt-carousel .bt-banner-slider::-webkit-scrollbar { display: none; }
+.bt-carousel-controls { display: flex; align-items: center; justify-content: center; gap: 16px; padding: 0 0 12px; }
+.bt-carousel-controls button { appearance: none; cursor: pointer; font: inherit; color: var(--wp--preset--color--ink); background: var(--wp--preset--color--base); }
+.bt-carousel-arrow { width: 44px; height: 44px; padding: 0; border: 1px solid var(--wp--preset--color--ink); border-radius: 50%; font-size: 24px !important; line-height: 1; }
+.bt-carousel-arrow:hover { background: var(--wp--preset--color--ink); color: var(--wp--preset--color--base); }
+.bt-carousel-dots { display: flex; align-items: center; }
+.bt-carousel-dot { width: 44px; height: 44px; padding: 0; border: 0; display: grid; place-items: center; border-radius: 50%; }
+.bt-carousel-dot::after { content: ''; width: 9px; height: 9px; border: 1px solid currentColor; border-radius: 50%; transition: width .15s ease; }
+.bt-carousel-dot[aria-current='true']::after { width: 24px; border-radius: 8px; background: currentColor; }
+.bt-carousel-count { min-width: 3.8em; font-size: 12px; font-variant-numeric: tabular-nums; }
+.bt-about { font-size: 16px; line-height: 1.7; }
+.bt-about-intro { border-radius: 20px; overflow: hidden; }
+.bt-about > * + * { margin-block-start: clamp(32px, 5vw, 64px); }
+.bt-about .bt-about-hero { gap: 0; overflow: hidden; border-radius: 20px; margin-block-end: 0; }
+.bt-about-hero > .wp-block-column { margin: 0; }
+.bt-about-hero-copy { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: clamp(24px, 4vw, 56px); }
+.bt-about-hero-copy > * { margin-block: 0 24px; }
+.bt-about-hero-copy > :last-child { margin-bottom: 0; }
+.bt-about .bt-about-eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+.bt-about .bt-about-title { font-size: clamp(36px, 4.4vw, 64px); line-height: 1.08; letter-spacing: -.055em; }
+.bt-about .bt-about-hero-photo { margin: 0; height: 100%; }
+.bt-about .bt-about-hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
+.bt-about-story { gap: clamp(24px, 5vw, 72px); }
+.bt-about-story h2 { max-width: 12em; }
+.bt-about-story p:first-child { margin-top: 0; }
+.bt-about .bt-about-campaign { margin-inline: 0; }
+.bt-about-campaign img { display: block; width: 100%; }
+.bt-about-campaign figcaption { margin-top: 12px; font-size: 14px; }
+.bt-about-collections { gap: 20px; }
+.bt-about-card { display: flex; flex-direction: column; border-top: 1px solid var(--wp--preset--color--ink); padding-top: 20px; }
+.bt-about-card > :first-child { margin-top: 0; }
+.bt-about-card .wp-block-buttons { margin-top: auto; padding-top: 16px; }
+.bt-about-card h3 { font-size: 24px; margin-top: 8px; }
+.bt-about-card p { margin-block: 0 20px; }
+.bt-about .bt-about-outro { padding: clamp(24px, 4vw, 48px); border-radius: 16px; text-align: center; }
+.bt-about-outro .wp-block-buttons { justify-content: center; }
+.bt-about .wp-block-button__link { min-height: 44px; }
 .bt-home-section, .bt-home-story { margin-block: 40px; }
 .bt-home-promos .wp-block-image img { display: block; width: 100%; }
 .bt-home-section .wp-block-details { border-top: 1px solid var(--wp--preset--color--line); padding-block: 18px; }
@@ -148,6 +188,11 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 .wc-block-components-product-price ins { color: var(--wp--preset--color--accent); text-decoration: none; }
 
 @media (max-width: 781px) {
+  .bt-about .bt-about-hero { flex-direction: column-reverse; }
+  .bt-about .bt-about-hero-photo { height: auto; }
+  .bt-about .bt-about-hero-photo img { height: auto; }
+  .bt-about-hero-copy { padding: 28px 24px; }
+  .bt-about-collections { gap: 32px; }
   .bt-announcement { padding-block: 7px; }
   .bt-header .bt-utility { justify-content: center; padding-block: 8px; gap: 8px 16px; }
   .bt-utility .wp-block-navigation__container { justify-content: center; gap: 6px 14px; }
@@ -169,4 +214,5 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .bt-carousel-dot::after { transition: none; }
 }
